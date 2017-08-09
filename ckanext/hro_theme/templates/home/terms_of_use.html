@@ -1,0 +1,20 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('Terms of use') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('Terms of use'), controller='ckanext.hro_theme.plugin:Hro_ThemeController', action='terms_of_use' %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content">
+      {% block terms_of_use %}
+        <h1 class="page-heading">{{ _('Terms of use') }}</h1>
+        {% snippet 'home/snippets/terms_of_use_text.html' %}
+      {% endblock %}
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}

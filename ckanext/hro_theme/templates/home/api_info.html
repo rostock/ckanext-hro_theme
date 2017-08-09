@@ -1,0 +1,23 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('API info') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('API info'), controller='ckanext.hro_theme.plugin:Hro_ThemeController', action='api_info' %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content">
+      {% block api_info %}
+        <h1 class="page-heading">{{ _('API info') }}</h1>
+        {% set api_url = g.site_url ~ '/api/action' %}
+        {% set api_doc_url = 'http://docs.ckan.org/en/{0}/api'.format(g.ckan_doc_version) %}
+        {% set datastore_api_doc_url = 'http://docs.ckan.org/en/{0}/maintaining/datastore.html'.format(g.ckan_doc_version) %}
+        {% snippet 'home/snippets/api_info_text.html', site_title=g.site_title, api_url=api_url, api_doc_url=api_doc_url, datastore_api_doc_url=datastore_api_doc_url %}
+      {% endblock %}
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}

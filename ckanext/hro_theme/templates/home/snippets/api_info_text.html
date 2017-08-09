@@ -1,0 +1,95 @@
+{% trans %}
+<p>{{ site_title }} not only comes with an intuitive user interface but also with an extensive application programming interface (API). The API facilitates the use of all functionalities provided by the open-source data cataloguing software CKAN which is at the basis of {{ site_title }}: searching for datasets, viewing the metadata (descriptive information) of a specific dataset, or filtering the contents of ressources and linking ressources.</p>
+
+<p>As both input and output format, the API uses <a href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation" target="_blank">JSON</a>. An example API call (to show the dataset <code>apotheken</code>) looks like this: <a href="{{ api_url }}/package_show?id=apotheken" target="_blank">{{ api_url }}/package_show?id=apotheken</a>.</p>
+
+<p>A detailed description of the application programming interface can be found within the <a href="{{ api_doc_url }}" target="_blank">documentation</a> of CKAN.</p>
+
+<h2>Searching for datasets and viewing metadata</h2>
+
+<p><a href="{{ api_url }}/package_search?q=apothek" target="_blank">{{ api_url }}/package_search?q=apothek</a></p>
+
+<p>On calling the above URL, datasets are searched for containing the search key <code>apothek</code>. During the search process various metadata fields are scanned and therefore all datasets are returned as results that contain the search key in one of their metadata fields.</p>
+
+<p>Once the wanted dataset and hence its ID was identified amongst the search results, all the information of the dataset can now be queried by calling the following URL (of which the last part equals the dataset ID):</p>
+
+<p><a href="{{ api_url }}/package_show?id=652e7b9e-5bb2-4a7e-aeff-12421d3c32a5" target="_blank">{{ api_url }}/package_show?id=652e7b9e-5bb2-4a7e-aeff-12421d3c32a5</a>.</p>
+
+<p>A (shortened) result, then, could appear as follows:</p>
+
+<pre class="well">{
+    help: […],
+    success: true,
+    result:
+    {
+        id: "652e7b9e-5bb2-4a7e-aeff-12421d3c32a5",
+        name: "apotheken",
+        title: "Apotheken",
+        maintainer: "Hansestadt Rostock – Kataster-, Vermessungs- und Liegenschaftsamt",
+        maintainer_email: "geodienste@rostock.de",
+        […]
+        resources: [
+            {
+                id: "0c2c4996-afad-4ebe-9a3d-a3a7d7047a4d",
+                name: "Apotheken",
+                url: "https://geo.sv.rostock.de/download/opendata/apotheken/apotheken.csv",
+                format: "CSV",
+                mimetype: "text/x-comma-separated-values",
+                size: "18081",
+                hash: "sha256:e056f7335e2ee420d9485a86c3924b54fff27a2e7edeb4bdd5f6278e8d41ddd6",
+                […]
+            },
+            […]
+        ],
+        […]
+        tags: [
+            {
+                id: "fbf2dd06-001b-4788-bd98-168a6df82bd3",
+                name: "Arzneimittel",
+                […]
+            },
+            […]
+        ],
+        […]
+        groups: [
+            {
+                id: "08b0e154-77d7-440f-ab7b-70511004a405",
+                name: "gesundheit",
+                title: "Gesundheit",
+                […]
+            },
+            […]
+        ],
+        […]
+}</pre>
+
+<p>The output is very comprehensive and should be analysed in detail during the first queries. The most important information in the above (shortened) result is:
+    <ul>
+        <li>A ressource in CSV file format is available under <a href="https://geo.sv.rostock.de/download/opendata/apotheken/apotheken.csv" target="_blank">https://geo.sv.rostock.de/download/opendata/apotheken/apotheken.csv</a>. It is 18081 bytes in size. What is very important in terms of a ressource is its hash value which can be used for proving the integrity of the file.</li>
+        <li>The tags (key words) assigned to this dataset are of interest particularly for searching purposes.</li>
+        <li>The dataset is allocated to category <code>08b0e154-77d7-440f-ab7b-70511004a405</code>. A list of all datasets or further information of a certain category can be viewed either by using the web interface or by calling the API: <a href="{{ api_url }}/group_show?id=08b0e154-77d7-440f-ab7b-70511004a405" target="_blank">{{ api_url }}/group_show?id=08b0e154-77d7-440f-ab7b-70511004a405</a>.</li>
+        <li>The dataset provides a description with additional details such as the update interval or information about the contents of the ressources.</li>
+    </ul>
+</p>
+
+<h2>Filtering the contents of ressources and linking ressources</h2>
+
+<p>Particularly when mobile devices are used or when only a low data transfer rate is available, it is advantageous to be able to download specific extracts of ressources (i.e. to filter ressources) and not having to download the complete ressources: The CKAN DataStore which is enabled for certain ressources provides the functionality of filtering. To check whether the DataStore is enabled for a certain ressource either the web interface can be used (via the site listing all the details of the ressource) or the API can be called by passing the correspondent ressource ID (e.g. the ID <code>290cdf3c-33eb-44a8-963e-65a0ee140a45</code>): <a href="{{ api_url }}/datastore_search?resource_id=290cdf3c-33eb-44a8-963e-65a0ee140a45" target="_blank">{{ api_url }}/datastore_search?resource_id=290cdf3c-33eb-44a8-963e-65a0ee140a45</a>. The output will consist either of an error message (if the DataStore is not enabled) or of all the contents of the DataStore for this particular ressource.</p>
+
+<p>If the DataStore is enabled for a certain ressource, either simple operations can be executed (with the already shown <code>datastore_search</code> function) or more complex operations such as SQL queries can be executed (with the <code>datastore_search_sql</code> function). When using SQL queries, all columns that shall be presented in the result must be explicitly indicated: otherwise errors may arise.</p>
+
+<p>A simple example for linking two datasets by means of location and, at the same time, for filtering the contents based on location as well could appear as follows:</p>
+
+<pre class="well">SELECT
+     bezeichnung,
+     strasse_name,
+     hausnummer,
+     hausnummer_zusatz
+      FROM "0c2c4996-afad-4ebe-9a3d-a3a7d7047a4d"
+       WHERE ST_Within(ST_Transform(geometrie,25833),ST_Buffer(ST_Transform((SELECT geometrie FROM "e614d725-4fad-4447-820d-4475ca55cff5" WHERE bezeichnung = 'Deutsche Med'),25833),300))</pre>
+
+<p>This command can be executed via the API by calling the following URL:</p>
+
+<p><a target="_blank" href="{{ api_url }}/datastore_search_sql?sql=SELECT%20bezeichnung,%20strasse_name,%20hausnummer,%20hausnummer_zusatz%20FROM%20%220c2c4996-afad-4ebe-9a3d-a3a7d7047a4d%22%20WHERE%20ST_Within(ST_Transform(geometrie,25833),ST_Buffer(ST_Transform((SELECT%20geometrie%20FROM%20%22e614d725-4fad-4447-820d-4475ca55cff5%22%20WHERE%20bezeichnung%20=%20%27Deutsche%20Med%27),25833),300))">{{ api_url }}/datastore_search_sql?sql=SELECT bezeichnung, strasse_name, hausnummer, hausnummer_zusatz FROM "0c2c4996-afad-4ebe-9a3d-a3a7d7047a4d" WHERE ST_Within(ST_Transform(geometrie,25833),ST_Buffer(ST_Transform((SELECT geometrie FROM "e614d725-4fad-4447-820d-4475ca55cff5" WHERE bezeichnung = 'Deutsche Med'),25833),300))</a></p>
+<p>A detailed description of the DataStore API can be found within the <a href="{{ datastore_api_doc_url }}" target="_blank">documentation</a> of CKAN.</p>
+{% endtrans %}

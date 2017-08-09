@@ -1,0 +1,349 @@
+/*
+ beautifications
+*/
+
+.site-footer label {
+  margin-top: 3px;
+}
+
+[role="main"] {
+  min-height: 0;
+}
+
+.homepage .module-search {
+  margin: 0;
+}
+
+.module {
+  margin: 0;
+}
+
+.with-separator {
+  border-bottom: 1px dotted #dddddd;
+}
+
+#dataset-resources,
+.additional-info {
+  padding-top: 10px;
+}
+
+.search-form .search-input button {
+  top: 30%;
+}
+
+.notes.embedded-content {
+  padding-bottom: 10px;
+}
+
+
+/*
+ fonts
+*/
+
+@font-face {
+    font-family:'PT Sans';
+    font-style:normal;
+    font-weight:normal;
+    local:'PT Sans';
+    src:url("/fonts/PTS55F_W.ttf");
+}
+
+@font-face {
+    font-family:'PT Sans';
+    font-style:italic;
+    font-weight:normal;
+    local:'PT Sans Italic';
+    src:url("/fonts/PTS56F_W.ttf");
+}
+
+@font-face {
+    font-family:'PT Sans';
+    font-style:normal;
+    font-weight:bold;
+    local:'PT Sans Bold';
+    src:url("/fonts/PTS75F_W.ttf");
+}
+
+@font-face {
+    font-family:'PT Sans';
+    font-style:italic;
+    font-weight:bold;
+    local:'PT Sans Bold Italic';
+    src:url("/fonts/PTS76F_W.ttf");
+}
+
+body {
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.navbar-search .search-query {
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/*
+ color scheme
+*/
+
+a {
+ color: #006cb7;
+ text-decoration: none;
+}
+
+a:hover {
+ color: #005692;
+ text-decoration: none;
+}
+
+a:focus {
+ color: #005692;
+ text-decoration: none;
+}
+
+.account-masthead {
+  background-color: #005692;
+}
+
+.account-masthead .account .notifications a span.badge {
+  color: #000;
+  background-color: #ffeb9c;
+}
+
+span.badge {
+  color: #000;
+  background-color: #ffeb9c;
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-left: 3px;
+}
+
+.account-masthead .account ul li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.account-masthead .account ul li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #003e69;
+}
+
+.masthead {
+  background-color: #006cb7;
+}
+
+.masthead .navigation .nav-pills li a:hover {
+  background-color: #003e69;
+  color: #fff;
+}
+
+.masthead .navigation .nav-pills li.active a {
+  background-color: #005692;
+}
+
+.masthead input[type="text"]:focus {
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+.homepage .module-search .module-content {
+  background-color: #006cb7;
+}
+
+.homepage .module-search .tags {
+  background-color: #005692;
+}
+
+.homepage [role="main"] {
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+.site-footer,
+body {
+  background-color: #005692;
+}
+
+.site-footer,
+.site-footer label,
+.site-footer small {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.control-custom.disabled .checkbox.btn,
+.btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0067af;
+  background-image: -moz-linear-gradient(top, #006cb7, #005692);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#006cb7), to(#005692));
+  background-image: -webkit-linear-gradient(top, #006cb7, #005692);
+  background-image: -o-linear-gradient(top, #006cb7, #005692);
+  background-image: linear-gradient(to bottom, #006cb7, #005692);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff006cb7', endColorstr='#ff005692', GradientType=0);
+  border-color: #005692 #005692 #003e69;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #005692;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.control-custom.disabled .checkbox.btn:hover,
+.control-custom.disabled .checkbox.btn:focus,
+.control-custom.disabled .checkbox.btn:active,
+.control-custom.disabled .checkbox.btn.active,
+.control-custom.disabled .checkbox.btn.disabled,
+.control-custom.disabled .checkbox.btn[disabled],
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #005692;
+  *background-color: #003e69;
+}
+
+.control-custom.disabled .checkbox.btn:active,
+.control-custom.disabled .checkbox.btn.active
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #003e69 \9;
+}
+
+.nav-item.active > a,
+.nav-aside li.active a {
+  background-color: #005692;
+}
+
+.nav-item.active > a:hover,
+.nav-aside li.active a:hover {
+  background-color: #005692;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0067af;
+  background-image: -moz-linear-gradient(top, #006cb7, #005692);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#006cb7), to(#005692));
+  background-image: -webkit-linear-gradient(top, #006cb7, #005692);
+  background-image: -o-linear-gradient(top, #006cb7, #005692);
+  background-image: linear-gradient(to bottom, #006cb7, #005692);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff006cb7', endColorstr='#ff005692', GradientType=0);
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #0067af;
+  background-image: -moz-linear-gradient(top, #006cb7, #005692);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#006cb7), to(#005692));
+  background-image: -webkit-linear-gradient(top, #006cb7, #005692);
+  background-image: -o-linear-gradient(top, #006cb7, #005692);
+  background-image: linear-gradient(to bottom, #006cb7, #005692);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff006cb7', endColorstr='#ff005692', GradientType=0);
+}
+
+a.tag:hover {
+  background-color: #006cb7;
+  border: 1px solid #005692;
+  -webkit-box-shadow: inset 0 1px 0 #0082dc;
+  -moz-box-shadow: inset 0 1px 0 #0082dc;
+  box-shadow: inset 0 1px 0 #0082dc;
+}
+
+.pill {
+  background-color: #005692;
+}
+
+
+/*
+ custom data formats
+*/
+
+.format-label[data-format=citysdk],
+.format-label[data-format*=citysdk] {
+  width: 32px;
+  height: 35px;
+  background-position: -96px -62px;
+}
+
+.label[data-format=citysdk],
+.label[data-format*=citysdk] {
+  background-color: #ec96be;
+}
+
+.format-label[data-format=ecw],
+.format-label[data-format*=ecw],
+.format-label[data-format=geotiff],
+.format-label[data-format*=geotiff] {
+  width: 32px;
+  height: 35px;
+  background-position: -352px -62px;
+}
+
+.label[data-format=ecw],
+.label[data-format*=ecw],
+.label[data-format=geotiff],
+.label[data-format*=geotiff] {
+  background-color: #8e5900;
+}
+
+.format-label[data-format=georss],
+.format-label[data-format*=georss] {
+  width: 32px;
+  height: 35px;
+  background-position: -256px -62px;
+}
+
+.label[data-format=georss],
+.label[data-format*=georss] {
+  background-color: #ef7100;
+}
+
+.format-label[data-format=shp],
+.format-label[data-format*=shp] {
+  width: 32px;
+  height: 35px;
+  background-position: -128px -62px;
+}
+
+.label[data-format=shp],
+.label[data-format*=shp] {
+  background-color: #686868;
+}
+
+.format-label[data-format=wcs],
+.format-label[data-format*=wcs] {
+  width: 32px;
+  height: 35px;
+  background: url("/img/wcs-icon.png") no-repeat 0 0;
+  background-position: 0 -62px;
+}
+
+.label[data-format=wcs],
+.label[data-format*=wcs] {
+  background-color: #7aae3d;
+}
+
+.label[data-format*=wms] {
+  background-color: #adc717;
+}

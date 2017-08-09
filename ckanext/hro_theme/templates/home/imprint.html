@@ -1,0 +1,20 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('Imprint') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('Imprint'), controller='ckanext.hro_theme.plugin:Hro_ThemeController', action='imprint' %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content">
+      {% block imprint %}
+        <h1 class="page-heading">{{ _('Imprint') }}</h1>
+        {% snippet 'home/snippets/imprint_text.html' %}
+      {% endblock %}
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}

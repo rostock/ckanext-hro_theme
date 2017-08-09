@@ -1,0 +1,20 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('Privacy policy') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">{% link_for _('Privacy policy'), controller='ckanext.hro_theme.plugin:Hro_ThemeController', action='privacy_policy' %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content">
+      {% block privacy_policy %}
+        <h1 class="page-heading">{{ _('Privacy policy') }}</h1>
+        {% snippet 'home/snippets/privacy_policy_text.html' %}
+      {% endblock %}
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}

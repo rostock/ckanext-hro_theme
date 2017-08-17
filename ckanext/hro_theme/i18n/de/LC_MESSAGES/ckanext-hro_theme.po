@@ -1232,3 +1232,6 @@ msgstr "Geben Sie einfach ein neues Passwort ein. Ihr Benutzerkonto wird dann au
 
 msgid "New password"
 msgstr "Neues Passwort"
+
+msgid "Open data portal of the municipality of Rostock"
+msgstr "Portal für offene Daten der Hansestadt Rostock"

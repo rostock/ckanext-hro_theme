@@ -684,3 +684,7 @@ msgstr ""
 msgid "This dataset satisfies the Open Definition."
 msgstr ""
 
+#: ckanext/hro_theme/templates/base.html:29
+msgid "Open data portal of the municipality of Rostock"
+msgstr ""
+

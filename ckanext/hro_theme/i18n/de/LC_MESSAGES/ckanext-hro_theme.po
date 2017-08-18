@@ -1235,3 +1235,6 @@ msgstr "Neues Passwort"
 
 msgid "Open data portal of the municipality of Rostock"
 msgstr "Open-Data-Portal der Hansestadt Rostock"
+
+msgid "There are no showcases that feature this dataset"
+msgstr "Es sind noch keine Datennutzungen für diesen Datensatz bekannt bzw. hinterlegt."

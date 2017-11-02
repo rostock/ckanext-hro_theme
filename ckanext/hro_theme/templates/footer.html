@@ -2,7 +2,7 @@
   <div class="container">
     {% block footer_content %}
     <div class="row">
-      <div class="span8 footer-links">
+      <div class="span4 footer-links">
         {% block footer_nav %}
           <ul class="unstyled">
             {% block footer_links %}
@@ -12,6 +12,13 @@
               <li><a href="{{ h.url_for(controller='ckanext.hro_theme.plugin:Hro_ThemeController', action='terms_of_use') }}">{{ _('Terms of use') }}</a></li>
             {% endblock %}
           </ul>
+        {% endblock %}
+      </div>
+      <div class="span4 footer-links">
+        {% block footer_badge %}
+          <a href="http://www.opendatainside.com/mybadge/opendata-hro" target="_blank">
+            <img src="http://www.opendatainside.com/badge/opendata-hro" width="90" height="90" alt="Open Data Inside" />
+          </a>
         {% endblock %}
       </div>
       <div class="span4 attribution">

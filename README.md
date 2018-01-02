@@ -27,10 +27,10 @@ To install ckanext-hro_theme:
 
 To install ckanext-hro_theme for development, activate your CKAN virtualenv and do:
 
-        git clone https://github.com/kvlahrosch/ckanext-hro_theme.git
-        cd ckanext-hro_theme
-        python setup.py develop
-        pip install -r dev-requirements.txt
+    git clone https://github.com/kvlahrosch/ckanext-hro_theme.git
+    cd ckanext-hro_theme
+    python setup.py develop
+    pip install -r dev-requirements.txt
 
 ## Translation
 

@@ -1,31 +1,31 @@
-# Extension for CKAN – HRO theme
+# Extension for *CKAN*: HRO theme
 
-A custom theme for OpenData.HRO, the open data portal of the municipality of Rostock
+A custom theme for OpenData.HRO, the open data portal of the municipality of Rostock – view it in production: https://www.opendata-hro.de
 
 ## Requirements
 
-* CKAN >= 2.7.0
+*   [*CKAN*](https://ckan.org) >= 2.7.0
 
 ## Installation
 
-To install ckanext-hro_theme:
+To install ckanext-hro_theme for production:
 
-1.  Activate your CKAN virtual environment, for example:
+1.  Activate your *CKAN* virtual *Python* environment, for example:
 
         . /usr/lib/ckan/default/bin/activate
 
-1.  Install the ckanext-hro_theme Python package into your virtual environment:
+1.  Install the ckanext-hro_theme *Python* package into your virtual *Python* environment:
 
         pip install ckanext-hro_theme
 
-1.  Add `hro_theme` to the `ckan.plugins` setting in your CKAN config file (by default the config file is located at `/etc/ckan/default/production.ini`).
-1.  Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu:
+1.  Add `hro_theme` to the `ckan.plugins` setting in your *CKAN* config file (by default the config file is located at `/etc/ckan/default/production.ini`)
+1.  Restart *CKAN*. For example, if you have deployed *CKAN* with *Apache HTTP Server* on *Ubuntu*:
 
         sudo service apache2 reload
 
-## Development Installation
+## Development installation
 
-To install ckanext-hro_theme for development, activate your CKAN virtualenv and do:
+To install ckanext-hro_theme for development, activate your *CKAN* virtualenv and do:
 
     git clone https://github.com/kvlahrosch/ckanext-hro_theme.git
     cd ckanext-hro_theme

@@ -1,4 +1,4 @@
-# Extension for *CKAN*: HRO theme
+# Extension for *CKAN*: HRO-theme
 
 A custom theme for OpenData.HRO, the open data portal of the municipality of Rostock – view it in production: https://www.opendata-hro.de
 
@@ -27,7 +27,7 @@ To install ckanext-hro_theme for production:
 
 To install ckanext-hro_theme for development, activate your *CKAN* virtualenv and do:
 
-    git clone https://github.com/kvlahrosch/ckanext-hro_theme.git
+    git clone https://github.com/rostock/ckanext-hro_theme.git
     cd ckanext-hro_theme
     python setup.py develop
     pip install -r dev-requirements.txt

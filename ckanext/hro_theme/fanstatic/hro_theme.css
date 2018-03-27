@@ -335,7 +335,7 @@ a.tag:hover {
 .format-label[data-format*=wcs] {
   width: 32px;
   height: 35px;
-  background: url("/img/wcs-icon.png") no-repeat 0 0;
+  background: url("img/wcs-icon.png") no-repeat 0 0;
   background-position: 0 -62px;
 }
 

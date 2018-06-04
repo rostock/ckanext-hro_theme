@@ -279,67 +279,50 @@ a.tag:hover {
  custom data formats
 */
 
-.format-label[data-format=citysdk],
 .format-label[data-format*=citysdk] {
   width: 32px;
   height: 35px;
   background-position: -96px -62px;
 }
 
-.label[data-format=citysdk],
 .label[data-format*=citysdk] {
   background-color: #ec96be;
 }
 
-.format-label[data-format=ecw],
 .format-label[data-format*=ecw],
-.format-label[data-format=geotiff],
 .format-label[data-format*=geotiff] {
   width: 32px;
   height: 35px;
   background-position: -352px -62px;
 }
 
-.label[data-format=ecw],
 .label[data-format*=ecw],
-.label[data-format=geotiff],
 .label[data-format*=geotiff] {
   background-color: #8e5900;
 }
 
-.format-label[data-format=georss],
 .format-label[data-format*=georss],
-.format-label[data-format=inspire download service],
-.format-label[data-format*=inspire download service],
-.format-label[data-format=inspire view service],
-.format-label[data-format*=inspire view service] {
+.format-label[data-format*=inspire] {
   width: 32px;
   height: 35px;
   background-position: -256px -62px;
 }
 
-.label[data-format=georss],
 .label[data-format*=georss],
-.label[data-format=inspire download service],
-.label[data-format*=inspire download service],
-.label[data-format=inspire view service],
-.label[data-format*=inspire view service] {
+.label[data-format*=inspire] {
   background-color: #ef7100;
 }
 
-.format-label[data-format=shp],
 .format-label[data-format*=shp] {
   width: 32px;
   height: 35px;
   background-position: -128px -62px;
 }
 
-.label[data-format=shp],
 .label[data-format*=shp] {
   background-color: #686868;
 }
 
-.format-label[data-format=wcs],
 .format-label[data-format*=wcs] {
   width: 32px;
   height: 35px;
@@ -347,7 +330,6 @@ a.tag:hover {
   background-position: 0 -62px;
 }
 
-.label[data-format=wcs],
 .label[data-format*=wcs] {
   background-color: #7aae3d;
 }

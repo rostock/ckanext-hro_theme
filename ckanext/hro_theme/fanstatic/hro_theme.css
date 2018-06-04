@@ -308,14 +308,22 @@ a.tag:hover {
 }
 
 .format-label[data-format=georss],
-.format-label[data-format*=georss] {
+.format-label[data-format*=georss],
+.format-label[data-format=inspire download service],
+.format-label[data-format*=inspire download service],
+.format-label[data-format=inspire view service],
+.format-label[data-format*=inspire view service] {
   width: 32px;
   height: 35px;
   background-position: -256px -62px;
 }
 
 .label[data-format=georss],
-.label[data-format*=georss] {
+.label[data-format*=georss],
+.label[data-format=inspire download service],
+.label[data-format*=inspire download service],
+.label[data-format=inspire view service],
+.label[data-format*=inspire view service] {
   background-color: #ef7100;
 }
 

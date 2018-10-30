@@ -147,10 +147,6 @@
                 <td>{{ res.id }}</td>
               </tr>
               <tr>
-                <th scope="row">{{ _('Data created') }}</th>
-                <td>{% snippet 'snippets/local_friendly_datetime.html', datetime_obj=res.created %}</td>
-              </tr>
-              <tr>
                 <th scope="row">{{ _('Data last updated') }}</th>
                 <td>{% snippet 'snippets/local_friendly_datetime.html', datetime_obj=res.last_modified %}</td>
               </tr>

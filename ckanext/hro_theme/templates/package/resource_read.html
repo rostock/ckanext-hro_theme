@@ -32,13 +32,9 @@
             {% endif %}
             {% if res.url and h.is_url(res.url) %}
               <li>
-                <a class="btn btn-primary resource-url-analytics resource-type-{{ res.resource_type }}" href="{{ res.url }}">
-                  {% if res.resource_type in ('listing', 'service') %}
-                    <i class="fa fa-eye"></i> {{ _('View') }}
-                  {% elif res.resource_type == 'api' %}
-                    <i class="fa fa-key"></i> {{ _('API Endpoint') }}
-                  {% elif (not res.has_views or not res.can_be_previewed) and not res.url_type == 'upload' %}
-                    <i class="fa fa-external-link"></i> {{ _('Go to resource') }}
+                <a class="btn btn-large btn-primary resource-type-{{ res.resource_type }}" href="{{ res.url }}" target="_blank">
+                  {% if res.resource_type == 'api' %}
+                    <i class="fa fa-external-link"></i> {{ _('API Endpoint') }}
                   {% else %}
                     <i class="fa fa-arrow-circle-o-down"></i> {{ _('Download') }}
                   {% endif %}
@@ -53,7 +49,7 @@
           {% block resource_read_title %}<h1 class="page-heading">{{ h.resource_display_name(res) }}</h1>{% endblock %}
           {% block resource_read_url %}
             {% if res.url and h.is_url(res.url) %}
-              <p class="muted ellipsis">{{ _('URL:') }} <a class="resource-url-analytics" href="{{ res.url }}" title="{{ res.url }}">{{ res.url }}</a></p>
+              <p class="muted ellipsis">{{ _('URL:') }} <a href="{{ res.url }}" target="_blank" title="{{ res.url }}">{{ res.url }}</a></p>
             {% elif res.url %}
               <p class="muted break-word">{{ _('URL:') }} {{ res.url }}</p>
             {% endif %}
@@ -173,19 +169,24 @@
                     <td>{{ res.format }}</td>
                   </tr>
                 {% endif %}
-                {% if res.mimetype %}
-                  <tr>
-                    <th scope="row">{{ _('MIME type') }}</th>
-                    <td>{{ res.mimetype }}</td>
-                  </tr>
-                {% endif %}
                 {% for key, value in h.format_resource_items(res.items()) %}
-                  {% if key == 'size' %}
+                  {% if key == 'mimetype' or key == 'Media type' %}
                     <tr>
-                      <th scope="row">{{ _('Size') }}</th>
+                      <th scope="row">{{ _('MIME type') }}</th>
                       <td>{{ value }}</td>
                     </tr>
-                  {% elif key == 'hash' %}
+                  {% endif %}
+                {% endfor %}
+                {% for key, value in h.format_resource_items(res.items()) %}
+                  {% if key == 'size' or key == 'Size' or key == 'Größe' %}
+                    <tr>
+                      <th scope="row">{{ _('Size') }}</th>
+                      <td>{% snippet 'snippets/nice_size.html', size_string=value %}</td>
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+                {% for key, value in h.format_resource_items(res.items()) %}
+                  {% if key == 'hash' %}
                     <tr>
                       <th scope="row">{{ _('Hash') }}</th>
                       <td>{{ value }}</td>

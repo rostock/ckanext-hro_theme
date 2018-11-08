@@ -10,6 +10,13 @@
   {% endblock %}
   {% block resource_item_description %}
     <p class="description">
+      {% if res.resource_type == 'file' %}
+        {% for key, value in h.format_resource_items(res.items()) %}
+          {% if key == 'size' or key == 'Size' or key == 'Größe' %}
+            {% snippet 'snippets/nice_size.html', size_string=value %}{% if res.description %}<br/>{% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
       {% if res.description %}
         {{ h.markdown_extract(h.get_translated(res, 'description'), extract_length=80) }}
       {% endif %}
@@ -26,10 +33,10 @@
     <ul class="dropdown-menu">
       {% block resource_item_explore_links %}
       <li>
-        <a href="{{ url }}">
+        <a href="{{ url }}" class="resource-url-analytics">
           {% if res.has_views %}
             <i class="fa fa-bar-chart-o"></i>
-            {{ _('Preview') }}
+            {{ _('Preview and more information') }}
           {% else %}
             <i class="fa fa-info-circle"></i>
             {{ _('More information') }}
@@ -38,13 +45,11 @@
       </li>
       {% if res.url and h.is_url(res.url) %}
       <li>
-        <a href="{{ res.url }}" class="resource-url-analytics" target="_blank">
-          {% if res.has_views or res.url_type == 'upload' %}
-            <i class="fa fa-arrow-circle-o-down"></i>
-            {{ _('Download') }}
+        <a href="{{ res.url }}" target="_blank">
+          {% if res.resource_type == 'api' %}
+            <i class="fa fa-external-link"></i> {{ _('API Endpoint') }}
           {% else %}
-            <i class="fa fa-external-link"></i>
-            {{ _('Go to resource') }}
+            <i class="fa fa-arrow-circle-o-down"></i> {{ _('Download') }}
           {% endif %}
         </a>
       </li>

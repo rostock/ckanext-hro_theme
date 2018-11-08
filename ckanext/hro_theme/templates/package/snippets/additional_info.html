@@ -67,6 +67,27 @@
             </td>
           </tr>
         {% endif %}
+        {% if pkg_dict.extras %}
+          {% for extra in h.sorted_extras(pkg_dict.extras) %}
+            {% set key, value = extra %}
+            {% if _(key) == 'temporal_coverage_from' %}
+              <tr>
+                <th scope="row" class="dataset-label">{{ _("Temporal coverage from") }}</th>
+                <td class="dataset-details">
+                  {% snippet 'snippets/local_friendly_datetime.html', datetime_obj=value %}
+                </td>
+              </tr>
+            {% endif %}
+            {% if _(key) == 'temporal_coverage_to' %}
+              <tr>
+                <th scope="row" class="dataset-label">{{ _("Temporal coverage to") }}</th>
+                <td class="dataset-details">
+                  {% snippet 'snippets/local_friendly_datetime.html', datetime_obj=value %}
+                </td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
 
       {% endblock %}
     </tbody>

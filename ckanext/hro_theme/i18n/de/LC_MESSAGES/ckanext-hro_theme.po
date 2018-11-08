@@ -555,9 +555,9 @@ msgid ""
 "other content as long as you attribute the other content in the following"
 " manner: © Hanse- und Universitätsstadt Rostock (CC BY 4.0).</p> <h2>Using the data of the "
 "OpenStreetMap project</h2> <p>The data owned by the contributors of the "
-"<a href=\"http://www.openstreetmap.org\" "
+"<a href=\"https://www.openstreetmap.org\" "
 "target=\"_blank\">OpenStreetMap</a> project are made available under the "
-"<a rel=\"license\" href=\"https://opendatacommons.org/licenses/odbl\" "
+"<a rel=\"license\" href=\"https://opendatacommons.org/licenses/odbl/index.html\" "
 "target=\"_blank\">Open Data Commons Open Database License</a> (ODbL). For"
 " processing these data the municipality of Rostock uses the open-source "
 "software <a href=\"https://imposm.org\" target=\"_blank\">Imposm</a>. In "
@@ -574,7 +574,7 @@ msgid ""
 "distribution of data. The original author of CKAN is the <a "
 "href=\"https://okfn.org\" target=\"_blank\">Open Knowledge "
 "Foundation</a>. It published its work under the <a rel=\"license\" "
-"href=\"http://www.gnu.org/licenses/agpl-3.0.html\" target=\"_blank\">GNU "
+"href=\"https://www.gnu.org/licenses/agpl-3.0.html\" target=\"_blank\">GNU "
 "Affero General Public License 3.0</a> (AGPL 3.0).</p> <p>The custom CKAN-"
 "template for this web application is published <a "
 "href=\"https://github.com/rostock/ckanext-hro_theme\" "
@@ -607,9 +607,9 @@ msgstr ""
 "sowie zu remixen, zu verändern und auf den Inhalten aufbauen, und zwar für beliebige Zwecke, auch und vor "
 "allem kommerziell. Allein der Quellenvermerk ist stets und bei jedweder Art der Nutzung erforderlich und "
 "wie folgt auszugestalten: © Hanse- und Universitätsstadt Rostock (CC BY 4.0).</p> <h2>Nutzung der Daten von OpenStreetMap</h2> <p>Die Daten "
-"des Projektes <a href=\"http://www.openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>, die von der Hanse- und Universitätsstadt Rostock "
+"des Projektes <a href=\"https://www.openstreetmap.org\" target=\"_blank\">OpenStreetMap</a>, die von der Hanse- und Universitätsstadt Rostock "
 "angebotenen Inhalten zugrundeliegen, unterliegen der freien Datenbanklizenz "
-"<a rel=\"license\" href=\"https://opendatacommons.org/licenses/odbl\" target=\"_blank\">Open Data Commons Open Database "
+"<a rel=\"license\" href=\"https://opendatacommons.org/licenses/odbl/index.html\" target=\"_blank\">Open Data Commons Open Database "
 "License</a> (ODbL). Für die Aufbereitung der Daten verwendet die Hanse- und Universitätsstadt Rostock die Open-Source-Software "
 "<a href=\"https://imposm.org\" target=\"_blank\">Imposm</a>. Der Quellenvermerk ist stets und bei jedweder Art der Nutzung "
 "erforderlich und wie folgt auszugestalten: © OpenStreetMap (ODbL).</p> <h2>Nutzung der Daten der Landkreise und "
@@ -621,7 +621,7 @@ msgstr ""
 "basiert auf <a href=\"https://ckan.org\" target=\"_blank\">CKAN</a>, einem webbasierten "
 "System zum Speichern und Verteilen von Daten. Die Autorin von CKAN ist die "
 "<a href=\"https://okfn.org\" target=\"_blank\">Open Knowledge Foundation</a>. Ihr Werk "
-"ist veröffentlicht unter der freien <a rel=\"license\" href=\"http://www.gnu.org/licenses/agpl-3.0.html\" "
+"ist veröffentlicht unter der freien <a rel=\"license\" href=\"https://www.gnu.org/licenses/agpl-3.0.html\" "
 "target=\"_blank\">GNU Affero General Public License 3.0</a>.</p> <p>Die angepasste CKAN-"
 "Oberfläche des vorliegenden Angebots ist <a "
 "href=\"https://github.com/rostock/ckanext-hro_theme\" "
@@ -680,14 +680,10 @@ msgstr "Dies ist eine veraltete Version des Datensatzes, bearbeitet zum Zeitpunk
 msgid "View"
 msgstr "Vorschauansicht"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:39
+#: ckanext/hro_theme/templates/package/resource_read.html:37
+#: ckanext/hro_theme/templates/package/snippets/resource_item.html:43
 msgid "API Endpoint"
-msgstr "API-Endpunkt"
-
-#: ckanext/hro_theme/templates/package/resource_read.html:41
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:47
-msgid "Go to resource"
-msgstr "Zur Ressource gehen"
+msgstr "API aufrufen"
 
 #: ckanext/hro_theme/templates/package/resource_read.html:43
 #: ckanext/hro_theme/templates/package/snippets/resource_item.html:44
@@ -697,7 +693,7 @@ msgstr "Download"
 #: ckanext/hro_theme/templates/package/resource_read.html:56
 #: ckanext/hro_theme/templates/package/resource_read.html:58
 msgid "URL:"
-msgstr "Download:"
+msgstr "Link:"
 
 #: ckanext/hro_theme/templates/package/resource_read.html:66
 msgid "From the dataset abstract"
@@ -882,17 +878,25 @@ msgstr "Veröffentlichungszeitpunkt der Metadaten"
 msgid "Metadata last updated"
 msgstr "Aktualisierungszeitpunkt der Metadaten"
 
+#: ckanext/hro_theme/templates/package/snippets/additional_info.html:75
+msgid "Temporal coverage from"
+msgstr "Beginn der zeitlichen Abdeckung"
+
+#: ckanext/hro_theme/templates/package/snippets/additional_info.html:83
+msgid "Temporal coverage to"
+msgstr "Ende der zeitlichen Abdeckung"
+
 #: ckanext/hro_theme/templates/package/snippets/resource_item.html:23
 msgid "Explore"
 msgstr "Entdecken"
 
 #: ckanext/hro_theme/templates/package/snippets/resource_item.html:32
-msgid "Preview"
-msgstr "Vorschau"
+msgid "Preview and more information"
+msgstr "Vorschau und Details"
 
 #: ckanext/hro_theme/templates/package/snippets/resource_item.html:35
 msgid "More information"
-msgstr "Mehr Informationen"
+msgstr "Details"
 
 #: ckanext/hro_theme/templates/package/snippets/resource_item.html:56
 msgid "Edit"

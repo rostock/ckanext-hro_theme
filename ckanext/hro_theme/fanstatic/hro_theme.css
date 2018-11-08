@@ -123,6 +123,10 @@ span.badge {
   margin-left: 3px;
 }
 
+span.ckan-icon-flame {
+  margin-bottom: 3px;
+}
+
 .account-masthead .account ul li a {
   color: rgba(255, 255, 255, 0.6);
 }

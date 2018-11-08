@@ -128,12 +128,18 @@ def render_size(size_string, raw=False):
     if raw:
         return str(size_)
     else:
-        if size_ > 1000000000:
+        if size_ >= 1073741824:
             return str(size_ / 1073741824) + ' GiB (' + str(size_ / 1000000000) + ' GB)'
-        elif size_ > 1000000:
+        elif size_ >= 1000000000:
+            return str(size_ / 1048576) + ' MiB (' + str(size_ / 1000000000) + ' GB)'
+        elif size_ >= 1048576:
             return str(size_ / 1048576) + ' MiB (' + str(size_ / 1000000) + ' MB)'
-        elif size_ > 1000:
+        elif size_ >= 1000000:
+            return str(size_ / 1024) + ' KiB (' + str(size_ / 1000000) + ' MB)'
+        elif size_ >= 1024:
             return str(size_ / 1024) + ' KiB (' + str(size_ / 1000) + ' kB)'
+        elif size_ >= 1000:
+            return str(size_) + ' Bytes (' + str(size_ / 1000) + ' kB)'
         else:
             return str(size_) + ' Bytes'
 

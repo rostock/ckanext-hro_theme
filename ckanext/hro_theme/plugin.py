@@ -126,7 +126,7 @@ def render_size(size_string, raw=False):
     if not size_:
         return ''
     if raw:
-        return size_
+        return str(size_)
     else:
         if size_ > 1000000000:
             return str(size_ / 1073741824) + ' GiB (' + str(size_ / 1000000000) + ' GB)'
@@ -135,7 +135,7 @@ def render_size(size_string, raw=False):
         elif size_ > 1000:
             return str(size_ / 1024) + ' KiB (' + str(size_ / 1000) + ' kB)'
         else:
-            return size_
+            return str(size_) + ' Bytes'
 
 
 class Hro_ThemePlugin(plugins.SingletonPlugin):

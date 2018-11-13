@@ -166,7 +166,13 @@
                 {% if res.format %}
                   <tr>
                     <th scope="row">{{ _('Format') }}</th>
-                    <td>{{ res.format }}</td>
+                    <td>
+                      {% if res.format == 'SHP' %}
+                        Shapefile
+                      {% else %}
+                        {{ res.format }}
+                      {% endif %}
+                    </td>
                   </tr>
                 {% endif %}
                 {% for key, value in h.format_resource_items(res.items()) %}

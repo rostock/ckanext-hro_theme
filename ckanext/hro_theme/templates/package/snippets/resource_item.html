@@ -11,11 +11,23 @@
   {% block resource_item_description %}
     <p class="description">
       {% if res.resource_type == 'file' %}
+        {{ _('File') }}
         {% for key, value in h.format_resource_items(res.items()) %}
           {% if key == 'size' or key == 'Size' or key == 'Größe' %}
-            {% snippet 'snippets/nice_size.html', size_string=value %}{% if res.description %}<br/>{% endif %}
+            • {% snippet 'snippets/nice_size.html', size_string=value %}
           {% endif %}
         {% endfor %}
+        {% for key, value in h.format_resource_items(res.items()) %}
+          {% if key == 'mimetype' or key == 'Media type' %}
+            {% set value_truncated = h.truncate(value, 67) %}
+            • {{ value_truncated }}
+          {% endif %}
+        {% endfor %}
+        {% if res.description %}
+          <br/>
+        {% endif %}
+      {% else %}
+        {{ _('API') }}
       {% endif %}
       {% if res.description %}
         {{ h.markdown_extract(h.get_translated(res, 'description'), extract_length=80) }}

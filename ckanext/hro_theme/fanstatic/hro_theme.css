@@ -315,9 +315,10 @@ a.tag:hover {
 .format-label[data-format*=ecw],
 .format-label[data-format=geotiff],
 .format-label[data-format*=geotiff] {
+  background: url(img/alt-icons.png) no-repeat 0 0;
   width: 32px;
   height: 35px;
-  background-position: -416px -62px;
+  background-position: -352px -62px;
 }
 
 .label[data-format=ecw],
@@ -380,6 +381,19 @@ a.tag:hover {
   background-color: #696969;
 }
 
+.format-label[data-format=wcs],
+.format-label[data-format*=wcs] {
+  background: url(img/wcs-icon.png) no-repeat 0 0;
+  width: 32px;
+  height: 35px;
+  background-position: 0 -62px;
+}
+
+.label[data-format=wcs],
+.label[data-format*=wcs] {
+  background-color: #337794;
+}
+
 .format-label[data-format=wfs],
 .format-label[data-format*=wfs],
 .format-label[data-format="inspire download service"],
@@ -429,17 +443,4 @@ a.tag:hover {
 
 .label[data-format*=xls] {
   background-color: #2db55e;
-}
-
-.format-label[data-format=wcs],
-.format-label[data-format*=wcs] {
-  width: 32px;
-  height: 35px;
-  background: url(img/wcs-icon.png) no-repeat 0 0;
-  background-position: 0 -62px;
-}
-
-.label[data-format=wcs],
-.label[data-format*=wcs] {
-  background-color: #337794;
 }

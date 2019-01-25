@@ -23,13 +23,11 @@
             • {{ value_truncated }}
           {% endif %}
         {% endfor %}
-        {% if res.description %}
-          <br/>
-        {% endif %}
       {% else %}
         {{ _('API') }}
       {% endif %}
       {% if res.description %}
+        <br/>
         {{ h.markdown_extract(h.get_translated(res, 'description'), extract_length=80) }}
       {% endif %}
     </p>

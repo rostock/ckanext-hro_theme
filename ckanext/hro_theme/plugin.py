@@ -105,19 +105,18 @@ def render_datetime(datetime_, date_format=None, with_hours=False):
 
 # custom function
 def _int_string_to_int(int_string):
-    if isinstance(int_string, basestring):
-        try:
-            ints = re.findall('\d', int_string)
-            if ints is not None:
-                int_ = ''
-                for item in ints:
-                    int_ += item
-            else:
-                return None
-        except TypeError:
+    try:
+        ints = re.findall('\d', int_string)
+        if ints is not None:
+            int_ = ''
+            for item in ints:
+                int_ += item
+        else:
             return None
-        except ValueError:
-            return None
+    except TypeError:
+        return None
+    except ValueError:
+        return None
     return int(int_)
 
 # custom function

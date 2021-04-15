@@ -799,17 +799,21 @@ msgstr "Datensatz hinzufügen"
 msgid "Relevance"
 msgstr "Relevanz"
 
+#: ckanext/hro_theme/templates/package/search.html:29
+msgid "Last Created"
+msgstr "zuletzt hinzugefügt"
+
 #: ckanext/hro_theme/templates/package/search.html:30
-msgid "Name Ascending"
-msgstr "Name (aufsteigend)"
+msgid "Last Modified"
+msgstr "zuletzt bearbeitet"
 
 #: ckanext/hro_theme/templates/package/search.html:31
-msgid "Name Descending"
-msgstr "Name (absteigend)"
+msgid "Name Ascending"
+msgstr "Titel (aufsteigend)"
 
 #: ckanext/hro_theme/templates/package/search.html:32
-msgid "Last Modified"
-msgstr "Zuletzt bearbeitet"
+msgid "Name Descending"
+msgstr "Titel (absteigend)"
 
 #: ckanext/hro_theme/templates/package/search.html:33
 msgid "Popular"

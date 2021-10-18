@@ -6,13 +6,17 @@ import re
 import routes.mapper
 import sys
 import tzlocal
-import ckan.lib.base as base
 import ckan.lib.formatters as formatters
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 
 from datetime import timedelta
 from ckan.common import config
+from flask import Blueprint
+
+
+hro_theme = Blueprint('hro_theme', __name__)
+
 
 # function taken from CKAN, kept untouched
 def get_display_timezone():
@@ -142,11 +146,27 @@ def render_size(size_string, raw=False):
         else:
             return str(size_) + ' Bytes'
 
+@hro_theme.route('/api_info', endpoint='api_info')
+def api_info(self):
+    return toolkit.render('home/api_info.html')
+
+@hro_theme.route('/imprint', endpoint='imprint')
+def imprint(self):
+    return toolkit.render('home/imprint.html')
+
+@hro_theme.route('/privacy_policy', endpoint='privacy_policy')
+def privacy_policy(self):
+    return toolkit.render('home/privacy_policy.html')
+
+@hro_theme.route('/terms_of_use', endpoint='terms_of_use')
+def terms_of_use(self):
+    return toolkit.render('home/terms_of_use.html')
+
 
 class Hro_ThemePlugin(plugins.SingletonPlugin):
 
+    plugins.implements(plugins.IBlueprint)
     plugins.implements(plugins.IConfigurer)
-    plugins.implements(plugins.IRoutes)
     plugins.implements(plugins.ITemplateHelpers)
     plugins.implements(plugins.ITranslation)
 
@@ -155,17 +175,8 @@ class Hro_ThemePlugin(plugins.SingletonPlugin):
         toolkit.add_public_directory(config_, 'public')
         toolkit.add_resource('fanstatic', 'hro_theme')
 
-    def before_map(self, route_map):
-        with routes.mapper.SubMapper(route_map,
-                controller='ckanext.hro_theme.plugin:Hro_ThemeController') as m:
-            m.connect('api_info', '/api_info', action='api_info')
-            m.connect('imprint', '/imprint', action='imprint')
-            m.connect('privacy_policy', '/privacy_policy', action='privacy_policy')
-            m.connect('terms_of_use', '/terms_of_use', action='terms_of_use')
-        return route_map
-
-    def after_map(self, route_map):
-        return route_map
+    def get_blueprint(self):
+        return hro_theme
 
     def get_helpers(self):
         return {
@@ -187,18 +198,3 @@ class Hro_ThemePlugin(plugins.SingletonPlugin):
 
     def i18n_domain(self):
         return 'ckanext-{name}'.format(name=self.name)
-
-
-class Hro_ThemeController(base.BaseController):
-
-    def api_info(self):
-        return base.render('home/api_info.html')
-
-    def imprint(self):
-        return base.render('home/imprint.html')
-
-    def privacy_policy(self):
-        return base.render('home/privacy_policy.html')
-
-    def terms_of_use(self):
-        return base.render('home/terms_of_use.html')

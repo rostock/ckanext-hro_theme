@@ -1,0 +1,4 @@
+hro_theme_css:
+  contents:
+    - css/hro_theme.css
+  output: ckanext-hro_theme/%(version)s_hro_theme.css

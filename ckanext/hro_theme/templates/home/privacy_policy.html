@@ -3,11 +3,11 @@
 {% block subtitle %}{{ _('Privacy policy') }}{% endblock %}
 
 {% block breadcrumb_content %}
-  <li class="active">{% link_for _('Privacy policy'), controller='ckanext.hro_theme.plugin:Hro_ThemeController', action='privacy_policy' %}</li>
+  <li class="active">{% link_for _('Privacy policy'), 'hro_theme.privacy_policy' %}</li>
 {% endblock %}
 
 {% block primary %}
-  <article class="module">
+  <article class="module" role="main">
     <div class="module-content">
       {% block privacy_policy %}
         <h1 class="page-heading">{{ _('Privacy policy') }}</h1>

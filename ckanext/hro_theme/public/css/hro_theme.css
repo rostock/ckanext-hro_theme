@@ -45,7 +45,7 @@
   font-style: normal;
   font-weight: normal;
   local: 'PT Sans';
-  src: url(fonts/PTS55F_W.ttf);
+  src: url('/fonts/PTS55F_W.ttf');
 }
 
 @font-face {
@@ -53,7 +53,7 @@
   font-style: italic;
   font-weight: normal;
   local: 'PT Sans Italic';
-  src: url(fonts/PTS56F_W.ttf);
+  src: url('/fonts/PTS56F_W.ttf');
 }
 
 @font-face {
@@ -61,7 +61,7 @@
   font-style: normal;
   font-weight: bold;
   local: 'PT Sans Bold';
-  src: url(fonts/PTS75F_W.ttf);
+  src: url('/fonts/PTS75F_W.ttf');
 }
 
 @font-face {
@@ -69,7 +69,7 @@
   font-style: italic;
   font-weight: bold;
   local: 'PT Sans Bold Italic';
-  src: url(fonts/PTS76F_W.ttf);
+  src: url('/fonts/PTS76F_W.ttf');
 }
 
 body {
@@ -284,7 +284,7 @@ a.tag:hover {
 */
 
 .format-label {
-  background: url(img/icons.png) no-repeat 0 0;
+  background: url('/img/icons.png') no-repeat 0 0;
   width: 32px;
   height: 35px;
   background-position: 0px -62px;
@@ -315,7 +315,7 @@ a.tag:hover {
 .format-label[data-format*=ecw],
 .format-label[data-format=geotiff],
 .format-label[data-format*=geotiff] {
-  background: url(img/alt-icons.png) no-repeat 0 0;
+  background: url('/img/alt-icons.png') no-repeat 0 0;
   width: 32px;
   height: 35px;
   background-position: -352px -62px;
@@ -330,7 +330,7 @@ a.tag:hover {
 
 .format-label[data-format=geojson],
 .format-label[data-format*=geojson] {
-  background: url(img/icons.png) no-repeat 0 0;
+  background: url('/img/icons.png') no-repeat 0 0;
   width: 32px;
   height: 35px;
   background-position: -288px -62px;
@@ -345,7 +345,7 @@ a.tag:hover {
 
 .format-label[data-format=gml],
 .format-label[data-format*=gml] {
-  background: url(img/icons.png) no-repeat 0 0;
+  background: url('/img/icons.png') no-repeat 0 0;
   width: 32px;
   height: 35px;
   background-position: -256px -62px;
@@ -358,7 +358,7 @@ a.tag:hover {
 
 .format-label[data-format=kml],
 .format-label[data-format*=kml] {
-  background: url(img/icons.png) no-repeat 0 0;
+  background: url('/img/icons.png') no-repeat 0 0;
   width: 32px;
   height: 35px;
   background-position: -448px -62px;
@@ -383,7 +383,7 @@ a.tag:hover {
 
 .format-label[data-format=wcs],
 .format-label[data-format*=wcs] {
-  background: url(img/wcs-icon.png) no-repeat 0 0;
+  background: url('/img/wcs-icon.png') no-repeat 0 0;
   width: 32px;
   height: 35px;
   background-position: 0 -62px;
@@ -398,7 +398,7 @@ a.tag:hover {
 .format-label[data-format*=wfs],
 .format-label[data-format="inspire download service"],
 .format-label[data-format*="inspire download service"] {
-  background: url(img/icons.png) no-repeat 0 0;
+  background: url('/img/icons.png') no-repeat 0 0;
   width: 32px;
   height: 35px;
   background-position: -384px -62px;
@@ -415,7 +415,7 @@ a.tag:hover {
 .format-label[data-format*=wms],
 .format-label[data-format="inspire view service"],
 .format-label[data-format*="inspire view service"] {
-  background: url(img/icons.png) no-repeat 0 0;
+  background: url('/img/icons.png') no-repeat 0 0;
   width: 32px;
   height: 35px;
   background-position: -352px -62px;
@@ -430,7 +430,7 @@ a.tag:hover {
 
 .format-label[data-format=wmts],
 .format-label[data-format*=wmts] {
-  background: url(img/icons.png) no-repeat 0 0;
+  background: url('/img/icons.png') no-repeat 0 0;
   width: 32px;
   height: 35px;
   background-position: -480px -62px;

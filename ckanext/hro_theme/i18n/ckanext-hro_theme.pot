@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-hro_theme 2.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-10-18 10:16+0200\n"
+"POT-Creation-Date: 2021-10-18 14:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.7.0\n"
 
-#: ckanext/hro_theme/templates/base.html:29
+#: ckanext/hro_theme/templates/base.html:5
 msgid "Open data portal of the municipality of Rostock"
 msgstr ""
 
@@ -50,60 +50,65 @@ msgstr ""
 msgid "Terms of use"
 msgstr ""
 
-#: ckanext/hro_theme/templates/footer.html:27
+#: ckanext/hro_theme/templates/footer.html:26
 msgid ""
 "<strong>Powered by</strong> <a class=\"hide-text ckan-footer-logo\" "
 "href=\"http://ckan.org\">CKAN</a>"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:12
+#: ckanext/hro_theme/templates/header.html:9
 msgid "Sysadmin settings"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:14
+#: ckanext/hro_theme/templates/header.html:11
 msgid "Admin"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:19
+#: ckanext/hro_theme/templates/header.html:16
 msgid "View profile"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:26
+#: ckanext/hro_theme/templates/header.html:23
 #, python-format
 msgid "Dashboard (%(num)d new item)"
 msgid_plural "Dashboard (%(num)d new items)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ckanext/hro_theme/templates/header.html:29
+#: ckanext/hro_theme/templates/header.html:27
 msgid "Dashboard"
 msgstr ""
 
+#: ckanext/hro_theme/templates/header.html:33
 #: ckanext/hro_theme/templates/header.html:35
-msgid "Edit settings"
+msgid "Profile settings"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:37
-msgid "Settings"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:43
-#: ckanext/hro_theme/templates/header.html:45
+#: ckanext/hro_theme/templates/header.html:40
+#: ckanext/hro_theme/templates/header.html:42
 msgid "Log out"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:56
+#: ckanext/hro_theme/templates/header.html:49
+msgid "Account"
+msgstr ""
+
+#: ckanext/hro_theme/templates/header.html:52
 msgid "Log in"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:58
+#: ckanext/hro_theme/templates/header.html:54
 #: ckanext/hro_theme/templates/user/new.html:3
 msgid "Register"
 msgstr ""
 
+#: ckanext/hro_theme/templates/header.html:69
+msgid "Toggle navigation"
+msgstr ""
+
 #: ckanext/hro_theme/templates/group/read_base.html:17
 #: ckanext/hro_theme/templates/group/snippets/info.html:32
-#: ckanext/hro_theme/templates/header.html:96
+#: ckanext/hro_theme/templates/header.html:90
 #: ckanext/hro_theme/templates/home/snippets/stats.html:10
 #: ckanext/hro_theme/templates/package/search.html:4
 #: ckanext/hro_theme/templates/package/search.html:7
@@ -111,29 +116,41 @@ msgstr ""
 msgid "Datasets"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:97
+#: ckanext/hro_theme/templates/header.html:91
 #: ckanext/hro_theme/templates/home/snippets/stats.html:16
 msgid "Organizations"
 msgstr ""
 
 #: ckanext/hro_theme/templates/group/read_base.html:3
 #: ckanext/hro_theme/templates/group/read_base.html:6
-#: ckanext/hro_theme/templates/header.html:98
+#: ckanext/hro_theme/templates/header.html:92
 #: ckanext/hro_theme/templates/home/snippets/stats.html:22
 #: ckanext/hro_theme/templates/package/read_base.html:20
 msgid "Groups"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:99
+#: ckanext/hro_theme/templates/header.html:93
 #: ckanext/hro_theme/templates/home/about.html:3
 #: ckanext/hro_theme/templates/home/about.html:6
 #: ckanext/hro_theme/templates/home/about.html:16
 msgid "About"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:109
-#: ckanext/hro_theme/templates/header.html:110
-msgid "Search data"
+#: ckanext/hro_theme/templates/header.html:100
+msgid "Search Datasets"
+msgstr ""
+
+#: ckanext/hro_theme/templates/header.html:101
+msgid "Search"
+msgstr ""
+
+#: ckanext/hro_theme/templates/header.html:101
+msgid "Search datasets"
+msgstr ""
+
+#: ckanext/hro_theme/templates/header.html:102
+#: ckanext/hro_theme/templates/snippets/search_form.html:18
+msgid "Submit"
 msgstr ""
 
 #: ckanext/hro_theme/templates/group/read.html:15
@@ -825,10 +842,6 @@ msgstr ""
 
 #: ckanext/hro_theme/templates/snippets/package_item.html:57
 msgid "This dataset has no description"
-msgstr ""
-
-#: ckanext/hro_theme/templates/snippets/search_form.html:18
-msgid "Submit"
 msgstr ""
 
 #: ckanext/hro_theme/templates/snippets/search_form.html:34

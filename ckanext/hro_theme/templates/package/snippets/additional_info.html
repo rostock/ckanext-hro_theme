@@ -52,21 +52,23 @@
 
         {% if pkg_dict.metadata_created %}
           <tr>
-            <th scope="row" class="dataset-label">{{ _("Metadata created") }}</th>
+            <th scope="row" class="dataset-label">{{ _("Created") }}</th>
 
             <td class="dataset-details">
                 {% snippet 'snippets/local_friendly_datetime.html', datetime_obj=pkg_dict.metadata_created %}
             </td>
           </tr>
         {% endif %}
+
         {% if pkg_dict.metadata_modified %}
           <tr>
-            <th scope="row" class="dataset-label">{{ _("Metadata last updated") }}</th>
+            <th scope="row" class="dataset-label">{{ _("Last Updated") }}</th>
             <td class="dataset-details">
                 {% snippet 'snippets/local_friendly_datetime.html', datetime_obj=pkg_dict.metadata_modified %}
             </td>
           </tr>
         {% endif %}
+
         {% if pkg_dict.extras %}
           {% for extra in h.sorted_extras(pkg_dict.extras) %}
             {% set key, value = extra %}

@@ -1,39 +1,17 @@
+{% ckan_extends %}
+
 {% macro license_string(pkg_dict) %}
   {% if 'license_url' in pkg_dict %}
     <a href="{{ pkg_dict.license_url }}" rel="dc:rights">{% if pkg_dict.license_title == 'CC0 1.0' %}Creative Commons Zero Universal 1.0 Public Domain Dedication{% elif pkg_dict.license_title == 'CC BY 4.0' %}Creative Commons Attribution 4.0 International{% elif pkg_dict.license_title == 'ODbL' %}Open Data Commons Open Database License{% else %}{{ pkg_dict.license_title }}{% endif %}</a>
   {% else %}
-    <span property="dc:rights">{{ pkg_dict.license_title }}</span>
+    {% if pkg_dict.license_id %}
+      <span property="dc:rights">{{ pkg_dict.license_title }}</span>
+    {% else %}
+      <span>{{ _('No License Provided') }}</span>
+    {% endif %}
   {% endif %}
 {% endmacro %}
 
-{% block license %}
-  {% if text_only %}
-    {% if pkg_dict.license_id %}
-      {{ license_string(pkg_dict) }}
-    {% else %}
-      {{ _('No License Provided') }}
-    {% endif %}
-  {% else %}
-    {% if pkg_dict.license_id %}
-      {% block license_wrapper %}
-        <section class="module module-narrow module-shallow license">
-          {% block license_title %}
-            <h2 class="module-heading"><i class="fa fa-medium fa-lock"></i> {{ _('License') }}</h2>
-          {% endblock %}
-          {% block license_content %}
-            <p class="module-content">
-              {% block license_content_inner %}
-                {{ license_string(pkg_dict) }}
-                {% if pkg_dict.isopen %}
-                  <a href="http://opendefinition.org/od/2.0/en" title="{{ _('This dataset satisfies the Open Definition.') }}">
-                      <img class="open-data" src="{{ h.url_for_static('/base/images/od_80x15_blue.png') }}" alt="[Open Data]" />
-                  </a>
-                {% endif %}
-              {% endblock %}
-            </p>
-          {% endblock %}
-        </section>
-      {% endblock %}
-    {% endif %}
-  {% endif %}
+{% block license_title %}
+  <h2 class="module-heading"><i class="fa fa-medium fa-lock"></i> {{ _('License') }}</h2>
 {% endblock %}

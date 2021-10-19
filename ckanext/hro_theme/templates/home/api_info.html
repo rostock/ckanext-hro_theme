@@ -3,7 +3,7 @@
 {% block subtitle %}{{ _('API info') }}{% endblock %}
 
 {% block breadcrumb_content %}
-  <li class="active">{% link_for _('API info'), controller='ckanext.hro_theme.plugin:Hro_ThemeController', action='api_info' %}</li>
+  <li class="active">{% link_for _('API info'), 'hro_theme.api_info' %}</li>
 {% endblock %}
 
 {% block primary %}

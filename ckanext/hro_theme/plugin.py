@@ -146,21 +146,23 @@ def render_size(size_string, raw=False):
         else:
             return str(size_) + ' Bytes'
 
-@hro_theme.route('/api_info', endpoint='api_info')
-def api_info(self):
+
+def api_info():
     return toolkit.render('home/api_info.html')
 
-@hro_theme.route('/imprint', endpoint='imprint')
-def imprint(self):
+def imprint():
     return toolkit.render('home/imprint.html')
 
-@hro_theme.route('/privacy_policy', endpoint='privacy_policy')
-def privacy_policy(self):
+def privacy_policy():
     return toolkit.render('home/privacy_policy.html')
 
-@hro_theme.route('/terms_of_use', endpoint='terms_of_use')
-def terms_of_use(self):
+def terms_of_use():
     return toolkit.render('home/terms_of_use.html')
+
+hro_theme.add_url_rule('/api_info', view_func=api_info, endpoint='api_info')
+hro_theme.add_url_rule('/imprint', view_func=imprint, endpoint='imprint')
+hro_theme.add_url_rule('/privacy_policy', view_func=privacy_policy, endpoint='privacy_policy')
+hro_theme.add_url_rule('/terms_of_use', view_func=terms_of_use, endpoint='terms_of_use')
 
 
 class Hro_ThemePlugin(plugins.SingletonPlugin):
@@ -173,7 +175,7 @@ class Hro_ThemePlugin(plugins.SingletonPlugin):
     def update_config(self, config_):
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
-        toolkit.add_resource('fanstatic', 'hro_theme')
+        toolkit.add_resource('public', 'ckanext-hro_theme')
 
     def get_blueprint(self):
         return hro_theme

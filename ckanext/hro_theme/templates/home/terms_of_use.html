@@ -3,7 +3,7 @@
 {% block subtitle %}{{ _('Terms of use') }}{% endblock %}
 
 {% block breadcrumb_content %}
-  <li class="active">{% link_for _('Terms of use'), controller='ckanext.hro_theme.plugin:Hro_ThemeController', action='terms_of_use' %}</li>
+  <li class="active">{% link_for _('Terms of use'), 'hro_theme.terms_of_use' %}</li>
 {% endblock %}
 
 {% block primary %}

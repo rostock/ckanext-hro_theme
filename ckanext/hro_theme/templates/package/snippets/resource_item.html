@@ -18,7 +18,7 @@
 <li class="resource-item with-separator" data-id="{{ res.id }}">
   {% block resource_item_title %}
   <a class="heading" href="{{ url }}" title="{{ res.name or res.description }}">
-     {% if res.format == 'SHP' %}Shapefile{% else %}{{ res.format }}{% endif %} • {{ h.resource_display_name(res) | truncate(50) }}<span class="format-label" property="dc:format" data-format="{{ res.format.lower() or 'data' }}">{{ h.get_translated(res, 'format') }}</span>
+     {% if res.format == 'SHP' %}Shapefile{% else %}{{ res.format }}{% endif %} â€¢ {{ h.resource_display_name(res) | truncate(50) }}<span class="format-label" property="dc:format" data-format="{{ res.format.lower() or 'data' }}">{{ h.get_translated(res, 'format') }}</span>
     {{ h.popular('views', res.tracking_summary.total, min=10) if res.tracking_summary }}
   </a>
   {% endblock %}
@@ -27,14 +27,14 @@
       {% if res.resource_type == 'file' %}
         {{ _('File') }}
         {% for key, value in h.format_resource_items(res.items()) %}
-          {% if key == 'size' or key == 'Size' or key == 'Größe' %}
-            • {% snippet 'snippets/nice_size.html', size_string=value %}
+          {% if key == 'size' or key == 'Size' or key == 'GrÃ¶ÃŸe' %}
+            â€¢ {% snippet 'snippets/nice_size.html', size_string=value %}
           {% endif %}
         {% endfor %}
         {% for key, value in h.format_resource_items(res.items()) %}
           {% if key == 'mimetype' or key == 'Media type' %}
             {% set value_truncated = h.truncate(value, 67) %}
-            • {{ value_truncated }}
+            â€¢ {{ value_truncated }}
           {% endif %}
         {% endfor %}
       {% else %}

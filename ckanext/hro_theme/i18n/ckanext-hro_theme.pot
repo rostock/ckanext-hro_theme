@@ -7,9 +7,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-hro_theme 2.0.0\n"
+"Project-Id-Version: ckanext-hro_theme 2.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-10-18 14:04+0200\n"
+"POT-Creation-Date: 2021-10-19 15:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,161 +56,83 @@ msgid ""
 "href=\"http://ckan.org\">CKAN</a>"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:9
-msgid "Sysadmin settings"
+#: ckanext/hro_theme/templates/header.html:10
+#: ckanext/hro_theme/templates/header.html:11
+msgid "Search data"
 msgstr ""
 
 #: ckanext/hro_theme/templates/header.html:11
-msgid "Admin"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:16
-msgid "View profile"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:23
-#, python-format
-msgid "Dashboard (%(num)d new item)"
-msgid_plural "Dashboard (%(num)d new items)"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ckanext/hro_theme/templates/header.html:27
-msgid "Dashboard"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:33
-#: ckanext/hro_theme/templates/header.html:35
-msgid "Profile settings"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:40
-#: ckanext/hro_theme/templates/header.html:42
-msgid "Log out"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:49
-msgid "Account"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:52
-msgid "Log in"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:54
-#: ckanext/hro_theme/templates/user/new.html:3
-msgid "Register"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:69
-msgid "Toggle navigation"
-msgstr ""
-
-#: ckanext/hro_theme/templates/group/read_base.html:17
-#: ckanext/hro_theme/templates/group/snippets/info.html:32
-#: ckanext/hro_theme/templates/header.html:90
-#: ckanext/hro_theme/templates/home/snippets/stats.html:10
-#: ckanext/hro_theme/templates/package/search.html:4
-#: ckanext/hro_theme/templates/package/search.html:7
-#: ckanext/hro_theme/templates/snippets/organization.html:55
-msgid "Datasets"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:91
-#: ckanext/hro_theme/templates/home/snippets/stats.html:16
-msgid "Organizations"
-msgstr ""
-
-#: ckanext/hro_theme/templates/group/read_base.html:3
-#: ckanext/hro_theme/templates/group/read_base.html:6
-#: ckanext/hro_theme/templates/header.html:92
-#: ckanext/hro_theme/templates/home/snippets/stats.html:22
-#: ckanext/hro_theme/templates/package/read_base.html:20
-msgid "Groups"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:93
-#: ckanext/hro_theme/templates/home/about.html:3
-#: ckanext/hro_theme/templates/home/about.html:6
-#: ckanext/hro_theme/templates/home/about.html:16
-msgid "About"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:100
-msgid "Search Datasets"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:101
 msgid "Search"
 msgstr ""
 
-#: ckanext/hro_theme/templates/header.html:101
-msgid "Search datasets"
-msgstr ""
-
-#: ckanext/hro_theme/templates/header.html:102
-#: ckanext/hro_theme/templates/snippets/search_form.html:18
+#: ckanext/hro_theme/templates/header.html:12
 msgid "Submit"
 msgstr ""
 
-#: ckanext/hro_theme/templates/group/read.html:15
-msgid "Relevance"
-msgstr ""
-
-#: ckanext/hro_theme/templates/group/read.html:16
-#: ckanext/hro_theme/templates/package/search.html:31
-#: ckanext/hro_theme/templates/snippets/search_form.html:4
+#: ckanext/hro_theme/templates/group/read.html:12
+#: ckanext/hro_theme/templates/organization/read.html:12
+#: ckanext/hro_theme/templates/package/search.html:12
 msgid "Name Ascending"
 msgstr ""
 
-#: ckanext/hro_theme/templates/group/read.html:17
-#: ckanext/hro_theme/templates/package/search.html:32
-#: ckanext/hro_theme/templates/snippets/search_form.html:4
+#: ckanext/hro_theme/templates/group/read.html:13
+#: ckanext/hro_theme/templates/organization/read.html:13
+#: ckanext/hro_theme/templates/package/search.html:13
 msgid "Name Descending"
 msgstr ""
 
-#: ckanext/hro_theme/templates/group/read.html:18
-#: ckanext/hro_theme/templates/package/search.html:30
+#: ckanext/hro_theme/templates/group/read.html:14
+#: ckanext/hro_theme/templates/organization/read.html:14
+#: ckanext/hro_theme/templates/package/search.html:14
+msgid "Last Created"
+msgstr ""
+
+#: ckanext/hro_theme/templates/group/read.html:15
+#: ckanext/hro_theme/templates/organization/read.html:15
+#: ckanext/hro_theme/templates/package/search.html:15
 msgid "Last Modified"
 msgstr ""
 
-#: ckanext/hro_theme/templates/group/read.html:19
-#: ckanext/hro_theme/templates/package/search.html:33
-#: ckanext/hro_theme/templates/snippets/package_item.html:50
+#: ckanext/hro_theme/templates/group/read.html:16
+#: ckanext/hro_theme/templates/organization/read.html:16
+#: ckanext/hro_theme/templates/package/search.html:16
 msgid "Popular"
 msgstr ""
 
-#: ckanext/hro_theme/templates/group/read.html:21
-#: ckanext/hro_theme/templates/snippets/search_form.html:3
+#: ckanext/hro_theme/templates/group/read.html:18
+#: ckanext/hro_theme/templates/organization/read.html:18
 msgid "Search datasets..."
 msgstr ""
 
-#: ckanext/hro_theme/templates/group/read_base.html:12
-#: ckanext/hro_theme/templates/package/read_base.html:14
-#: ckanext/hro_theme/templates/package/resource_read.html:31
-msgid "Manage"
+#: ckanext/hro_theme/templates/group/read_base.html:4
+#: ckanext/hro_theme/templates/group/snippets/info.html:34
+#: ckanext/hro_theme/templates/home/snippets/stats.html:10
+#: ckanext/hro_theme/templates/organization/read_base.html:4
+#: ckanext/hro_theme/templates/snippets/organization.html:6
+msgid "Datasets"
 msgstr ""
 
-#: ckanext/hro_theme/templates/group/read_base.html:18
-#: ckanext/hro_theme/templates/package/read_base.html:21
+#: ckanext/hro_theme/templates/group/read_base.html:5
+#: ckanext/hro_theme/templates/organization/read_base.html:5
 msgid "Activity Stream"
 msgstr ""
 
 #: ckanext/hro_theme/templates/group/snippets/info.html:16
-#: ckanext/hro_theme/templates/package/read.html:21
-#: ckanext/hro_theme/templates/snippets/organization.html:37
-#: ckanext/hro_theme/templates/snippets/package_item.html:42
+#: ckanext/hro_theme/templates/package/read.html:29
 msgid "Deleted"
 msgstr ""
 
-#: ckanext/hro_theme/templates/group/snippets/info.html:24
-#: ckanext/hro_theme/templates/snippets/organization.html:45
+#: ckanext/hro_theme/templates/group/snippets/info.html:26
 msgid "read more"
 msgstr ""
 
-#: ckanext/hro_theme/templates/group/snippets/info.html:36
-#: ckanext/hro_theme/templates/snippets/organization.html:59
+#: ckanext/hro_theme/templates/group/snippets/info.html:38
+#: ckanext/hro_theme/templates/snippets/organization.html:10
 msgid "Followers"
+msgstr ""
+
+#: ckanext/hro_theme/templates/home/about.html:7
+msgid "About"
 msgstr ""
 
 #: ckanext/hro_theme/templates/home/snippets/about_text.html:1
@@ -381,21 +303,17 @@ msgstr ""
 msgid ""
 "<h2>Publisher</h2> <p>Municipality of Rostock<br/>Office of the "
 "Mayor<br/>Press Office<br/>18050 Rostock<br/><span>telephone:</span> +49 "
-"381 381-1417<br/><span>telefax:</span> +49 381 "
-"381-9130<br/><span>email:</span> <a "
+"381 381-1417<br/><span>email:</span> <a "
 "href=\"mailto:presse@rostock.de\">presse@rostock.de</a></p> <h2>VAT "
 "identification number</h2> <p>DE 137385469</p> <h2>Responsibility</h2> "
 "<p>Municipality of Rostock<br/>Office of the Mayor<br/>Ulrich "
 "Kunze<br/>Press Officer<br/>Hinter dem Rathaus 5<br/>18050 "
 "Rostock<br/><span>telephone:</span> +49 381 "
-"381-1418<br/><span>telefax:</span> +49 381 "
-"381-9135<br/><span>email:</span> <a "
+"381-1418<br/><span>email:</span> <a "
 "href=\"mailto:ulrich.kunze@rostock.de\">ulrich.kunze@rostock.de</a></p> "
 "<h2>Concept and technical support</h2> <p>Municipality of "
 "Rostock<br/>Land Registry Office<br/>Holbeinplatz 14<br/>18069 "
-"Rostock<br/><span>telephone:</span> +49 381 "
-"381-6281<br/><span>telefax:</span> +49 381 "
-"381-6902<br/><span>email:</span> <a "
+"Rostock<br/><span>email:</span> <a "
 "href=\"mailto:opendata.hro@rostock.de\">opendata.hro@rostock.de</a></p> "
 "<h2>Licensing terms</h2> <p>This web application offered by the "
 "municipality of Rostock is based on <a href=\"https://ckan.org\" "
@@ -488,26 +406,23 @@ msgid "{0} statistics"
 msgstr ""
 
 #: ckanext/hro_theme/templates/home/snippets/stats.html:10
-#: ckanext/hro_theme/templates/package/read_base.html:19
 msgid "Dataset"
 msgstr ""
 
 #: ckanext/hro_theme/templates/home/snippets/stats.html:16
-#: ckanext/hro_theme/templates/snippets/organization.html:23
 msgid "Organization"
+msgstr ""
+
+#: ckanext/hro_theme/templates/home/snippets/stats.html:16
+msgid "Organizations"
 msgstr ""
 
 #: ckanext/hro_theme/templates/home/snippets/stats.html:22
 msgid "Group"
 msgstr ""
 
-#: ckanext/hro_theme/templates/home/snippets/stats.html:28
-msgid "Showcase"
-msgstr ""
-
-#: ckanext/hro_theme/templates/home/snippets/stats.html:28
-#: ckanext/hro_theme/templates/package/read_base.html:22
-msgid "Showcases"
+#: ckanext/hro_theme/templates/home/snippets/stats.html:22
+msgid "Groups"
 msgstr ""
 
 #: ckanext/hro_theme/templates/home/snippets/terms_of_use_text.html:1
@@ -573,131 +488,93 @@ msgid ""
 "target=\"_blank\">here</a> under the AGPL 3.0.</p>"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/read.html:11
-#: ckanext/hro_theme/templates/snippets/package_item.html:31
+#: ckanext/hro_theme/templates/package/read.html:9
 msgid "Private"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/read.html:18
-#: ckanext/hro_theme/templates/snippets/package_item.html:40
+#: ckanext/hro_theme/templates/package/read.html:15
+#: ckanext/hro_theme/templates/package/resource_read.html:26
+#, python-format
+msgid ""
+"You're currently viewing an old version of this dataset. To see the "
+"current version, click <a href=\"%(url)s\">here</a>."
+msgstr ""
+
+#: ckanext/hro_theme/templates/package/read.html:26
 msgid "Draft"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/read_base.html:33
-#, python-format
-msgid ""
-"This is an old revision of this dataset, as edited at %(timestamp)s. It "
-"may differ significantly from the <a href=\"%(url)s\">current "
-"revision</a>."
+#: ckanext/hro_theme/templates/package/resource_read.html:5
+msgid "Manage"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:37
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:60
+#: ckanext/hro_theme/templates/package/resource_read.html:12
+#: ckanext/hro_theme/templates/package/snippets/resource_item.html:75
 msgid "API Endpoint"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:39
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:62
+#: ckanext/hro_theme/templates/package/resource_read.html:14
+#: ckanext/hro_theme/templates/package/snippets/resource_item.html:78
 msgid "Download"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:52
-#: ckanext/hro_theme/templates/package/resource_read.html:54
+#: ckanext/hro_theme/templates/package/resource_read.html:36
+#: ckanext/hro_theme/templates/package/resource_read.html:38
 msgid "URL:"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:62
-msgid "From the dataset abstract"
+#: ckanext/hro_theme/templates/package/resource_read.html:46
+msgid "Dataset description:"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:104
-msgid "There are no views created for this resource yet."
-msgstr ""
-
-#: ckanext/hro_theme/templates/package/resource_read.html:108
-msgid "Not seeing the views you were expecting?"
-msgstr ""
-
-#: ckanext/hro_theme/templates/package/resource_read.html:110
-#: ckanext/hro_theme/templates/package/snippets/resource_view.html:26
-msgid "Click here for more information."
-msgstr ""
-
-#: ckanext/hro_theme/templates/package/resource_read.html:113
-msgid "Here are some reasons you may not be seeing expected views:"
-msgstr ""
-
-#: ckanext/hro_theme/templates/package/resource_read.html:115
-msgid "No view has been created that is suitable for this resource"
-msgstr ""
-
-#: ckanext/hro_theme/templates/package/resource_read.html:116
-msgid "The site administrators may not have enabled the relevant view plugins"
-msgstr ""
-
-#: ckanext/hro_theme/templates/package/resource_read.html:117
-msgid ""
-"If a view requires the DataStore, the DataStore plugin may not be "
-"enabled, or the data may not have been pushed to the DataStore, or the "
-"DataStore hasn't finished processing the data yet"
-msgstr ""
-
-#: ckanext/hro_theme/templates/package/resource_read.html:138
+#: ckanext/hro_theme/templates/package/resource_read.html:57
 msgid "Additional Information"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:142
+#: ckanext/hro_theme/templates/package/resource_read.html:61
 #: ckanext/hro_theme/templates/package/snippets/additional_info.html:18
 msgid "ID"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:146
+#: ckanext/hro_theme/templates/package/resource_read.html:65
 msgid "Data last updated"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:150
-#: ckanext/hro_theme/templates/snippets/license.html:21
+#: ckanext/hro_theme/templates/package/resource_read.html:69
+#: ckanext/hro_theme/templates/snippets/license.html:16
 msgid "License"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:155
+#: ckanext/hro_theme/templates/package/resource_read.html:74
 msgid "DataStore"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:156
+#: ckanext/hro_theme/templates/package/resource_read.html:75
 msgid "yes"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:156
+#: ckanext/hro_theme/templates/package/resource_read.html:75
 msgid "no"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:161
+#: ckanext/hro_theme/templates/package/resource_read.html:80
 msgid "Language"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:168
+#: ckanext/hro_theme/templates/package/resource_read.html:87
 msgid "Format"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:181
+#: ckanext/hro_theme/templates/package/resource_read.html:100
 msgid "MIME type"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:189
+#: ckanext/hro_theme/templates/package/resource_read.html:108
 msgid "Size"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/resource_read.html:197
+#: ckanext/hro_theme/templates/package/resource_read.html:116
 msgid "Hash"
-msgstr ""
-
-#: ckanext/hro_theme/templates/package/search.html:16
-msgid "Add Dataset"
-msgstr ""
-
-#: ckanext/hro_theme/templates/package/search.html:29
-msgid "Last Created"
 msgstr ""
 
 #: ckanext/hro_theme/templates/package/snippets/additional_info.html:2
@@ -723,85 +600,89 @@ msgid "Version"
 msgstr ""
 
 #: ckanext/hro_theme/templates/package/snippets/additional_info.html:55
-msgid "Metadata created"
+msgid "Created"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:64
-msgid "Metadata last updated"
+#: ckanext/hro_theme/templates/package/snippets/additional_info.html:65
+msgid "Last Updated"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:75
+#: ckanext/hro_theme/templates/package/snippets/additional_info.html:77
 msgid "Temporal coverage from"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:83
+#: ckanext/hro_theme/templates/package/snippets/additional_info.html:85
 msgid "Temporal coverage to"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:14
+#: ckanext/hro_theme/templates/package/snippets/resource_item.html:28
 msgid "File"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:27
+#: ckanext/hro_theme/templates/package/snippets/resource_item.html:41
 msgid "API"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:40
+#: ckanext/hro_theme/templates/package/snippets/resource_item.html:54
 msgid "Explore"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:49
+#: ckanext/hro_theme/templates/package/snippets/resource_item.html:63
 msgid "Preview and more information"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:52
+#: ckanext/hro_theme/templates/package/snippets/resource_item.html:66
 msgid "More information"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:71
+#: ckanext/hro_theme/templates/package/snippets/resource_item.html:87
 msgid "Edit"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_view.html:11
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:10
+msgid "Fullscreen"
+msgstr ""
+
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:18
 msgid "Embed"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_view.html:24
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:32
 msgid "This resource view is not available at the moment."
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_view.html:33
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:34
+msgid "Click here for more information."
+msgstr ""
+
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:41
 msgid "Download resource"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_view.html:56
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:62
 msgid "Your browser does not support iframes."
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_view.html:63
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:72
 msgid "Embed resource view"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_view.html:66
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:75
 msgid ""
 "You can copy and paste the embed code into a CMS or blog software that "
 "supports raw HTML"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_view.html:69
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:78
 msgid "Width"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_view.html:72
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:81
 msgid "Height"
 msgstr ""
 
-#: ckanext/hro_theme/templates/package/snippets/resource_view.html:75
+#: ckanext/hro_theme/templates/package/snippets/resource_view.html:84
 msgid "Code"
-msgstr ""
-
-#: ckanext/hro_theme/templates/package/snippets/resources.html:20
-msgid "Resources"
 msgstr ""
 
 #: ckanext/hro_theme/templates/package/snippets/tags.html:2
@@ -816,129 +697,31 @@ msgstr ""
 msgid "Filters"
 msgstr ""
 
-#: ckanext/hro_theme/templates/snippets/facet_list.html:81
+#: ckanext/hro_theme/templates/snippets/facet_list.html:36
 msgid "Show More {facet_type}"
 msgstr ""
 
-#: ckanext/hro_theme/templates/snippets/facet_list.html:84
+#: ckanext/hro_theme/templates/snippets/facet_list.html:39
 msgid "Show Only Popular {facet_type}"
 msgstr ""
 
-#: ckanext/hro_theme/templates/snippets/facet_list.html:88
+#: ckanext/hro_theme/templates/snippets/facet_list.html:43
 msgid "There are no {facet_type} that match this search"
 msgstr ""
 
-#: ckanext/hro_theme/templates/snippets/license.html:14
+#: ckanext/hro_theme/templates/snippets/license.html:10
 msgid "No License Provided"
 msgstr ""
 
-#: ckanext/hro_theme/templates/snippets/license.html:28
-msgid "This dataset satisfies the Open Definition."
+#: ckanext/hro_theme/templates/spatial/snippets/dataset_map_sidebar.html:2
+msgid "Dataset extent"
 msgstr ""
 
-#: ckanext/hro_theme/templates/snippets/organization.html:48
-msgid "There is no description for this organization"
+#: ckanext/hro_theme/templates/spatial/snippets/spatial_query.html:4
+msgid "Filter by location"
 msgstr ""
 
-#: ckanext/hro_theme/templates/snippets/package_item.html:57
-msgid "This dataset has no description"
-msgstr ""
-
-#: ckanext/hro_theme/templates/snippets/search_form.html:34
-msgid "Order by"
-msgstr ""
-
-#: ckanext/hro_theme/templates/snippets/search_form.html:43
-msgid "Go"
-msgstr ""
-
-#: ckanext/hro_theme/templates/snippets/search_form.html:70
-msgid "Remove"
-msgstr ""
-
-#: ckanext/hro_theme/templates/snippets/search_form.html:75
-msgid "Filter Results"
-msgstr ""
-
-#: ckanext/hro_theme/templates/snippets/search_form.html:82
-msgid "<p class=\"extra\">Please try another search.</p>"
-msgstr ""
-
-#: ckanext/hro_theme/templates/snippets/search_form.html:88
-msgid ""
-"<p id=\"search-error\"><strong>There was an error while "
-"searching.</strong> Please try again.</p>"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/new.html:6
-msgid "Registration"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/new.html:14
-msgid "Register for an Account"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/new.html:28
-msgid "Why Sign Up?"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/new.html:31
-msgid "Create datasets, groups and other exciting things"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/perform_reset.html:4
-msgid "Reset Your Password"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/perform_reset.html:7
-msgid "Password Reset"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/perform_reset.html:14
-msgid "New password"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/perform_reset.html:18
-msgid "Password"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/perform_reset.html:19
-msgid "Confirm"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/perform_reset.html:22
-msgid "Update Password"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/perform_reset.html:38
-#: ckanext/hro_theme/templates/user/request_reset.html:34
-msgid "How does this work?"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/perform_reset.html:41
-msgid "Simply enter a new password and we'll update your account"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/request_reset.html:3
-#: ckanext/hro_theme/templates/user/request_reset.html:13
-msgid "Reset your password"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/request_reset.html:6
-msgid "Password reset"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/request_reset.html:16
-msgid "Username"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/request_reset.html:19
-msgid "Request reset"
-msgstr ""
-
-#: ckanext/hro_theme/templates/user/request_reset.html:37
-msgid ""
-"Enter your username into the box and we will send you an email with a "
-"link to enter a new password."
+#: ckanext/hro_theme/templates/spatial/snippets/spatial_query.html:5
+msgid "Clear"
 msgstr ""
 

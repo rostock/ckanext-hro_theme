@@ -9,10 +9,10 @@
     'remove_field': remove_field }
   %}
   {% set sorting = [
-    (_('Last Created'), 'metadata_created desc'),
-    (_('Last Modified'), 'metadata_modified desc'),
     (_('Name Ascending'), 'title_string asc'),
     (_('Name Descending'), 'title_string desc'),
+    (_('Last Created'), 'metadata_created desc'),
+    (_('Last Modified'), 'metadata_modified desc'),
     (_('Popular'), 'views_recent desc') if g.tracking_enabled else (false, false) ]
   %}
   {% snippet 'snippets/search_form.html', form_id='dataset-search-form', type=dataset_type, query=q, sorting=sorting, sorting_selected=sort_by_selected, count=page.item_count, placeholder=_('Search ' + dataset_type + 's') + '...', facets=facets, show_empty=request.params, error=query_error, fields=fields %}
@@ -20,7 +20,6 @@
 
 {% block package_search_results_api %}
 {% endblock %}
-
 
 {% block secondary_content %}
   {% snippet "spatial/snippets/spatial_query.html", default_extent="[[54.05080, 11.99837], [54.24451, 12.29541]]" %}

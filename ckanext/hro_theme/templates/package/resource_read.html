@@ -7,32 +7,13 @@
 {% if res.url and h.is_url(res.url) %}
   <li>
     <div class="btn-group">
-    <a class="btn btn-large btn-primary resource-type-{{ res.resource_type }}" href="{{ res.url }}" target="_blank">
+    <a class="btn btn-lg btn-primary resource-type-{{ res.resource_type }}" href="{{ res.url }}" target="_blank">
       {% if res.resource_type == 'api' %}
         <i class="fa fa-external-link"></i> {{ _('API Endpoint') }}
       {% else %}
         <i class="fa fa-arrow-circle-o-down"></i> {{ _('Download') }}
       {% endif %}
     </a>
-    {% block download_resource_button %}
-      {% if res.datastore_active %}
-    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-        <span class="caret"></span>
-      </button>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="{{ h.url_for('datastore.dump', resource_id=res.id, bom=True) }}"
-          target="_blank"><span>CSV</span></a>
-        <a href="{{ h.url_for('datastore.dump', resource_id=res.id, format='tsv', bom=True) }}"
-          target="_blank"><span>TSV</span></a>
-        <a href="{{ h.url_for('datastore.dump', resource_id=res.id, format='json') }}"
-          target="_blank"><span>JSON</span></a>
-        <a href="{{ h.url_for('datastore.dump', resource_id=res.id, format='xml') }}"
-          target="_blank"><span>XML</span></a>
-      </li>
-    </ul>
-      {% endif %}
-    {% endblock %}
     </div>
   </li>
 {% endif %}
@@ -75,38 +56,69 @@
       <div class="module-content">
         <h2>{{ _('Additional Information') }}</h2>
         <table class="table table-striped table-bordered table-condensed" data-module="table-toggle-more">
-          <thead>
-            <tr>
-              <th scope="col">{{ _('Field') }}</th>
-              <th scope="col">{{ _('Value') }}</th>
-            </tr>
-          </thead>
           <tbody>
             <tr>
+              <th scope="row">{{ _('ID') }}</th>
+              <td>{{ res.id }}</td>
+            </tr>
+            <tr>
               <th scope="row">{{ _('Data last updated') }}</th>
-              <td>{{ h.render_datetime(res.last_modified) or h.render_datetime(res.created) or _('unknown') }}</td>
-            </tr>
-            <tr>
-              <th scope="row">{{ _('Metadata last updated') }}</th>
-              <td>{{ h.render_datetime(res.revision_timestamp) or h.render_datetime(res.created) or _('unknown') }}</td>
-            </tr>
-            <tr>
-              <th scope="row">{{ _('Created') }}</th>
-              <td>{{ h.render_datetime(res.created) or _('unknown') }}</td>
-            </tr>
-            <tr>
-              <th scope="row">{{ _('Format') }}</th>
-              <td>{{ res.format or res.mimetype_inner or res.mimetype or _('unknown') }}</td>
+              <td>{% snippet 'snippets/local_friendly_datetime.html', datetime_obj=res.last_modified %}</td>
             </tr>
             <tr>
               <th scope="row">{{ _('License') }}</th>
               <td>{% snippet "snippets/license.html", pkg_dict=pkg, text_only=True %}</td>
             </tr>
-            {% for key, value in h.format_resource_items(res.items()) %}
-              {% if key not in ('created', 'metadata modified', 'last modified', 'format') %}
-                <tr class="toggle-more"><th scope="row">{{ key | capitalize }}</th><td>{{ value }}</td></tr>
+            {% if res.resource_type == 'file' and res.datastore_active is defined %}
+              <tr>
+                <th scope="row">{{ _('DataStore') }}</th>
+              <td>{% if res.datastore_active == true %}{{ _('yes') }}{% else %}{{ _('no') }}{% endif %}</td>
+              </tr>
+            {% endif %}
+            {% if res.language %}
+              <tr>
+                <th scope="row">{{ _('Language') }}</th>
+                <td>{{ res.language }}</td>
+              </tr>
+            {% endif %}
+            {% if res.resource_type == 'file' %}
+              {% if res.format %}
+                <tr>
+                  <th scope="row">{{ _('Format') }}</th>
+                  <td>
+                    {% if res.format == 'SHP' %}
+                      Shapefile
+                    {% else %}
+                      {{ res.format }}
+                    {% endif %}
+                  </td>
+                </tr>
               {% endif %}
-            {% endfor %}
+              {% for key, value in h.format_resource_items(res.items()) %}
+                {% if key == 'mimetype' or key == 'Media type' %}
+                  <tr>
+                    <th scope="row">{{ _('MIME type') }}</th>
+                    <td>{{ value }}</td>
+                  </tr>
+                {% endif %}
+              {% endfor %}
+              {% for key, value in h.format_resource_items(res.items()) %}
+                {% if key == 'size' or key == 'Size' or key == 'Größe' %}
+                  <tr>
+                    <th scope="row">{{ _('Size') }}</th>
+                    <td>{% snippet 'snippets/nice_size.html', size_string=value %}</td>
+                  </tr>
+                {% endif %}
+              {% endfor %}
+              {% for key, value in h.format_resource_items(res.items()) %}
+                {% if key == 'hash' %}
+                  <tr>
+                    <th scope="row">{{ _('Hash') }}</th>
+                    <td>{{ value }}</td>
+                  </tr>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
           </tbody>
         </table>
       </div>

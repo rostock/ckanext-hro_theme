@@ -59,7 +59,7 @@ def date_str_to_datetime(date_str):
 
 # function taken from CKAN, kept untouched
 def _datestamp_to_datetime(datetime_):
-    if isinstance(datetime_, basestring):
+    if isinstance(datetime_, (str,bytes)):
         try:
             datetime_ = date_str_to_datetime(datetime_)
         except TypeError:
@@ -132,19 +132,19 @@ def render_size(size_string, raw=False):
         return str(size_)
     else:
         if size_ >= 1073741824:
-            return str(size_ / 1073741824) + ' GiB (' + str(size_ / 1000000000) + ' GB)'
+            return str(round(size_ / 1073741824)) + ' GiB (' + str(round(size_ / 1000000000)) + ' GB)'
         elif size_ >= 1000000000:
-            return str(size_ / 1048576) + ' MiB (' + str(size_ / 1000000000) + ' GB)'
+            return str(round(size_ / 1048576)) + ' MiB (' + str(round(size_ / 1000000000)) + ' GB)'
         elif size_ >= 1048576:
-            return str(size_ / 1048576) + ' MiB (' + str(size_ / 1000000) + ' MB)'
+            return str(round(size_ / 1048576)) + ' MiB (' + str(round(size_ / 1000000)) + ' MB)'
         elif size_ >= 1000000:
-            return str(size_ / 1024) + ' KiB (' + str(size_ / 1000000) + ' MB)'
+            return str(round(size_ / 1024)) + ' KiB (' + str(round(size_ / 1000000)) + ' MB)'
         elif size_ >= 1024:
-            return str(size_ / 1024) + ' KiB (' + str(size_ / 1000) + ' kB)'
+            return str(round(size_ / 1024)) + ' KiB (' + str(round(size_ / 1000)) + ' kB)'
         elif size_ >= 1000:
-            return str(size_) + ' Bytes (' + str(size_ / 1000) + ' kB)'
+            return str(round(size_)) + ' Bytes (' + str(round(size_ / 1000)) + ' kB)'
         else:
-            return str(size_) + ' Bytes'
+            return str(round(size_)) + ' Bytes'
 
 
 def api_info():

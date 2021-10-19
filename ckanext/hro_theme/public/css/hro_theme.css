@@ -2,24 +2,13 @@
  beautifications
 */
 
-.site-footer label {
-  margin-top: 3px;
+.dataTables_filter label::after,
+.dataTables_length label::after {
+  content: "" !important;
 }
 
 [role="main"] {
   min-height: 0;
-}
-
-.homepage .module-search {
-  margin: 0;
-}
-
-.module {
-  margin: 0;
-}
-
-.with-separator {
-  border-bottom: 1px dotted #dddddd;
 }
 
 #dataset-resources,
@@ -27,12 +16,29 @@
   padding-top: 10px;
 }
 
-.search-form .search-input button {
-  top: 30%;
+.homepage .module-search {
+  margin: 0;
+}
+
+.homepage .stats strong {
+  display: block;
+  font-size: 300%;
+}
+
+.module {
+  margin: 0;
 }
 
 .notes.embedded-content {
   padding-bottom: 10px;
+}
+
+.site-footer label {
+  margin-top: 3px;
+}
+
+.with-separator {
+  border-bottom: 1px dotted #dddddd;
 }
 
 
@@ -119,7 +125,6 @@ span.badge {
   color: #000;
   background-color: #ffeb9c;
   border-radius: 4px;
-  padding: 1px 6px;
   margin-left: 3px;
 }
 
@@ -283,164 +288,169 @@ a.tag:hover {
  custom data formats
 */
 
-.format-label {
-  background: url('/img/icons.png') no-repeat 0 0;
-  width: 32px;
-  height: 35px;
-  background-position: 0px -62px;
-}
-
 .format-label[data-format=citysdk],
 .format-label[data-format*=citysdk],
 .format-label[data-format=rss],
 .format-label[data-format*=rss] {
-  width: 32px;
-  height: 35px;
-  background-position: -96px -62px;
+  background: url('/img/icons.png') no-repeat 0 0 !important;
+  width: 32px !important;
+  height: 35px !important;
+  background-position: -96px -62px !important;
+  margin: 0 !important;
+  transform: none !important;
 }
 
 .label[data-format=citysdk],
 .label[data-format*=citysdk],
 .label[data-format=rss],
 .label[data-format*=rss] {
-  background-color: #ed96bf;
+  background-color: #ed96bf !important;
 }
 
 .label[data-format=csv],
 .label[data-format*=csv] {
-  background-color: #dfb200;
+  background-color: #dfb200 !important;
 }
 
 .format-label[data-format=ecw],
 .format-label[data-format*=ecw],
 .format-label[data-format=geotiff],
 .format-label[data-format*=geotiff] {
-  background: url('/img/alt-icons.png') no-repeat 0 0;
-  width: 32px;
-  height: 35px;
-  background-position: -352px -62px;
+  background: url('/img/alt-icons.png') no-repeat 0 0 !important;
+  width: 32px !important;
+  height: 35px !important;
+  background-position: -352px -62px !important;
+  margin: 0 !important;
+  transform: none !important;
 }
 
 .label[data-format=ecw],
 .label[data-format*=ecw],
 .label[data-format=geotiff],
 .label[data-format*=geotiff] {
-  background-color: #8d5900;
+  background-color: #8d5900 !important;
 }
 
 .format-label[data-format=geojson],
 .format-label[data-format*=geojson] {
-  background: url('/img/icons.png') no-repeat 0 0;
-  width: 32px;
-  height: 35px;
-  background-position: -288px -62px;
+  background: url('/img/icons.png') no-repeat 0 0 !important;
+  width: 32px !important;
+  height: 35px !important;
+  background-position: -288px -62px !important;
 }
 
 .label[data-format=geojson],
 .label[data-format*=geojson],
 .label[data-format=json],
 .label[data-format*=json] {
-  background-color: #ef7100;
+  background-color: #ef7100 !important;
 }
 
 .format-label[data-format=gml],
 .format-label[data-format*=gml] {
-  background: url('/img/icons.png') no-repeat 0 0;
-  width: 32px;
-  height: 35px;
-  background-position: -256px -62px;
+  background: url('/img/icons.png') no-repeat 0 0 !important;
+  width: 32px !important;
+  height: 35px !important;
+  background-position: -256px -62px !important;
 }
 
 .label[data-format=gml],
 .label[data-format*=gml] {
-  background-color: #bacc58;
+  background-color: #bacc58 !important;
 }
 
 .format-label[data-format=kml],
 .format-label[data-format*=kml] {
-  background: url('/img/icons.png') no-repeat 0 0;
-  width: 32px;
-  height: 35px;
-  background-position: -448px -62px;
+  background: url('/img/icons.png') no-repeat 0 0 !important;
+  width: 32px !important;
+  height: 35px !important;
+  background-position: -448px -62px !important;
 }
 
 .label[data-format=kml],
 .label[data-format*=kml] {
-  background-color: #4d79e0;
+  background-color: #4d79e0 !important;
 }
 
 .format-label[data-format=shp],
 .format-label[data-format*=shp] {
-  width: 32px;
-  height: 35px;
-  background-position: -128px -62px;
+  background: url('/img/icons.png') no-repeat 0 0 !important;
+  width: 32px !important;
+  height: 35px !important;
+  background-position: -128px -62px !important;
 }
 
 .label[data-format=shp],
 .label[data-format*=shp] {
-  background-color: #696969;
+  background-color: #696969 !important;
 }
 
 .format-label[data-format=wcs],
 .format-label[data-format*=wcs] {
-  background: url('/img/wcs-icon.png') no-repeat 0 0;
-  width: 32px;
-  height: 35px;
-  background-position: 0 -62px;
+  background: url('/img/wcs-icon.png') no-repeat 0 0 !important;
+  width: 32px !important;
+  height: 35px !important;
+  background-position: 0 -62px !important;
+  margin: 0 !important;
+  transform: none !important;
 }
 
 .label[data-format=wcs],
 .label[data-format*=wcs] {
-  background-color: #337794;
+  background-color: #337794 !important;
 }
 
 .format-label[data-format=wfs],
 .format-label[data-format*=wfs],
 .format-label[data-format="inspire download service"],
 .format-label[data-format*="inspire download service"] {
-  background: url('/img/icons.png') no-repeat 0 0;
-  width: 32px;
-  height: 35px;
-  background-position: -384px -62px;
+  background: url('/img/icons.png') no-repeat 0 0 !important;
+  width: 32px !important;
+  height: 35px !important;
+  background-position: -384px -62px !important;
+  margin: 0 !important;
+  transform: none !important;
 }
 
 .label[data-format=wfs],
 .label[data-format*=wfs],
 .label[data-format="inspire download service"],
 .label[data-format*="inspire download service"] {
-  background-color: #e07961;
+  background-color: #e07961 !important;
 }
 
 .format-label[data-format=wms],
 .format-label[data-format*=wms],
 .format-label[data-format="inspire view service"],
 .format-label[data-format*="inspire view service"] {
-  background: url('/img/icons.png') no-repeat 0 0;
-  width: 32px;
-  height: 35px;
-  background-position: -352px -62px;
+  background: url('/img/icons.png') no-repeat 0 0 !important;
+  width: 32px !important;
+  height: 35px !important;
+  background-position: -352px -62px !important;
+  margin: 0 !important;
+  transform: none !important;
 }
 
 .label[data-format=wms],
 .label[data-format*=wms],
 .label[data-format="inspire view service"],
 .label[data-format*="inspire view service"] {
-  background-color: #e6cb0a;
+  background-color: #e6cb0a !important;
 }
 
 .format-label[data-format=wmts],
 .format-label[data-format*=wmts] {
-  background: url('/img/icons.png') no-repeat 0 0;
-  width: 32px;
-  height: 35px;
-  background-position: -480px -62px;
+  background: url('/img/icons.png') no-repeat 0 0 !important;
+  width: 32px !important;
+  height: 35px !important;
+  background-position: -480px -62px !important;
 }
 
 .label[data-format=wmts],
 .label[data-format*=wmts] {
-  background-color: #73af82;
+  background-color: #73af82 !important;
 }
 
 .label[data-format*=xls] {
-  background-color: #2db55e;
+  background-color: #2db55e !important;
 }

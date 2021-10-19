@@ -1,15 +1,14 @@
 # German translations for ckanext-hro_theme.
-# Copyright (C) 2017 ORGANIZATION
 # This file is distributed under the same license as the ckanext-hro_theme
 # project.
-# FIRST AUTHOR <sebastian.gutzeit@rostock.de>, 2017.
+# Sebastian Gutzeit <sebastian.gutzeit@rostock.de>, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-hro_theme 0.0.4\n"
+"Project-Id-Version: ckanext-hro_theme 2.0.1\n"
 "Report-Msgid-Bugs-To: sebastian.gutzeit@rostock.de\n"
-"POT-Creation-Date: 2017-08-07 15:00+0200\n"
-"PO-Revision-Date: 2017-08-07 15:00+0200\n"
+"POT-Creation-Date: 2021-10-19 15:12+0200\n"
+"PO-Revision-Date: 2021-10-19 15:12+0200\n"
 "Last-Translator: Sebastian Gutzeit <sebastian.gutzeit@rostock.de>\n"
 "Language: de\n"
 "Language-Team: de <LL@li.org>\n"
@@ -17,37 +16,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.7.0\n"
 
-#: ckanext/hro_theme/templates/footer.html:9
-#: ckanext/hro_theme/templates/home/api_info.html:3
-#: ckanext/hro_theme/templates/home/api_info.html:6
-#: ckanext/hro_theme/templates/home/api_info.html:13
+msgid "Open data portal of the municipality of Rostock"
+msgstr "Open-Data-Portal der Hanse- und Universitätsstadt Rostock"
+
 msgid "API info"
 msgstr "API-Nutzung"
 
-#: ckanext/hro_theme/templates/footer.html:10
-#: ckanext/hro_theme/templates/home/privacy_policy.html:3
-#: ckanext/hro_theme/templates/home/privacy_policy.html:6
-#: ckanext/hro_theme/templates/home/privacy_policy.html:13
 msgid "Privacy policy"
 msgstr "Datenschutz"
 
-#: ckanext/hro_theme/templates/footer.html:11
-#: ckanext/hro_theme/templates/home/imprint.html:3
-#: ckanext/hro_theme/templates/home/imprint.html:6
-#: ckanext/hro_theme/templates/home/imprint.html:13
 msgid "Imprint"
 msgstr "Impressum"
 
-#: ckanext/hro_theme/templates/footer.html:12
-#: ckanext/hro_theme/templates/home/terms_of_use.html:3
-#: ckanext/hro_theme/templates/home/terms_of_use.html:6
-#: ckanext/hro_theme/templates/home/terms_of_use.html:13
 msgid "Terms of use"
 msgstr "Nutzungsbedingungen"
 
-#: ckanext/hro_theme/templates/footer.html:19
 msgid ""
 "<strong>Powered by</strong> <a class=\"hide-text ckan-footer-logo\" "
 "href=\"http://ckan.org\">CKAN</a>"
@@ -55,64 +40,103 @@ msgstr ""
 "<strong>Umgesetzt auf Basis von</strong> <a class=\"hide-text ckan-footer-logo\" "
 "href=\"http://ckan.org\">CKAN</a>"
 
-#: ckanext/hro_theme/templates/home/about.html:3
-#: ckanext/hro_theme/templates/home/about.html:6
-#: ckanext/hro_theme/templates/home/about.html:16
+msgid "Search data"
+msgstr "Datensuche"
+
+msgid "Search"
+msgstr "Datensuche"
+
+msgid "Submit"
+msgstr "Anwenden"
+
+msgid "Name Ascending"
+msgstr "Titel (aufsteigend)"
+
+msgid "Name Descending"
+msgstr "Titel (absteigend)"
+
+msgid "Last Created"
+msgstr "zuletzt hinzugefügt"
+
+msgid "Last Modified"
+msgstr "zuletzt bearbeitet"
+
+msgid "Popular"
+msgstr "Beliebtheit"
+
+msgid "Search datasets..."
+msgstr "Datensätze suchen…"
+
+msgid "Datasets"
+msgstr "Datensätze"
+
+msgid "Activity Stream"
+msgstr "Aktivitätsanzeige"
+
+msgid "Deleted"
+msgstr "Gelöscht"
+
+msgid "read more"
+msgstr "weitere Informationen"
+
+msgid "Followers"
+msgstr "Follower"
+
 msgid "About"
 msgstr "Hilfe"
 
-#: ckanext/hro_theme/templates/home/snippets/about_text.html:1
-#, python-format
-#: ckanext/hro_theme/templates/home/snippets/about_text.html:1
-#, python-format
 msgid ""
-" <h2>What is %(site_title)s?</h2> <p>Where exactly is the primary school "
-"located that is closest to your home and therefore can be reached by your "
-"children without having to cross many roads? Is your place of work directly "
-"connected with your home via cycle ways? Will there be road works again on "
-"your route to the sports ground next Sunday? Data to answer many, many "
-"questions like these is out there on the internet somewhere but it is not "
-"always easy to find.</p> <p>%(site_title)s is a web application serving as a "
-"catalogue of useful sets of data. It is run by the municipality of Rostock "
-"which is also the owner and publisher of the data. You can collect data here "
-"for yourself and others to use. Depending on the type of data, %(site_title)s"
-" may also be able to host it in a database, and provide some basic "
-"visualisation tools.</p> <h2>How does it work?</h2> <p>This site is running a"
-" powerful piece of open-source data cataloguing software called <a "
-"href=\"https://ckan.org\" target=\"_blank\">CKAN</a>, written and maintained "
-"by the <a href=\"https://okfn.org\" target=\"_blank\">Open Knowledge "
-"Foundation</a>. Each dataset record on CKAN contains a description of the "
-"data and other useful information, such as what formats it is available in, "
-"whether it is freely available, and what subject areas the data is about. One"
-" can improve or add to this information (CKAN keeps a fully versioned "
-"history).</p> <p i18n:msg=\"\">CKAN powers a number of data catalogues on the"
-" Internet. <a href=\"https://datahub.io\" target=\"_blank\">The Data Hub</a> "
-"is an openly editable open data catalogue, in the style of Wikipedia. The UK "
-"Government uses CKAN to run <a href=\"https://data.gov.uk\" "
-"target=\"_blank\">data.gov.uk</a>, which currently lists 8,000 government "
-"datasets. Official public data from most European countries is listed in a "
-"CKAN catalogue at <a href=\"https://www.europeandataportal.eu\" "
-"target=\"_blank\">europeandataportal.eu</a>. There is a comprehensive list of "
-"catalogues like these around the world at <a href=\"http://dataportals.org\" "
-"target=\"_blank\">dataportals.org</a>, which is itself powered by CKAN.</p> "
-"<h2>Open data and the Open Knowledge Foundation</h2> <p>Most of the data "
-"indexed at %(site_title)s are openly licensed, meaning anyone is free to use "
-"or re-use the data however they like. Perhaps someone will take that nice "
-"dataset of a city's public art that you found, and add it to a tourist map, "
-"or even make a neat app for your phone that will help you find artworks when "
-"you visit the city. Open data means more enterprise, collaborative science "
-"and transparent government. You can read more about open data in the <a "
+"<h2>What is %(site_title)s?</h2> <p>Where exactly is the primary school "
+"located that is closest to your home and therefore can be reached by your"
+" children without having to cross many roads? Is your place of work "
+"directly connected with your home via cycle ways? Will there be road "
+"works again on your route to the sports ground next Sunday? Data to "
+"answer many, many questions like these is out there on the internet "
+"somewhere but it is not always easy to find.</p> <p>%(site_title)s is a "
+"web application serving as a catalogue of useful sets of data. It is run "
+"by the municipality of Rostock which is also the owner and publisher of "
+"the data. You can collect data here for yourself and others to use. "
+"Depending on the type of data, %(site_title)s may also be able to host it"
+" in a database, and provide some basic visualisation tools.</p> <h2>How "
+"does it work?</h2> <p>This site is running a powerful piece of open-"
+"source data cataloguing software called <a href=\"https://ckan.org\" "
+"target=\"_blank\">CKAN</a>, written and maintained by the <a "
+"href=\"https://okfn.org\" target=\"_blank\">Open Knowledge "
+"Foundation</a>. Each dataset record on CKAN contains a description of the"
+" data and other useful information, such as what formats it is available "
+"in, whether it is freely available, and what subject areas the data is "
+"about. One can improve or add to this information (CKAN keeps a fully "
+"versioned history).</p> <p i18n:msg=\"\">CKAN powers a number of data "
+"catalogues on the Internet. <a href=\"https://datahub.io\" "
+"target=\"_blank\">The Data Hub</a> is an openly editable open data "
+"catalogue, in the style of Wikipedia. The UK Government uses CKAN to run "
+"<a href=\"https://data.gov.uk\" target=\"_blank\">data.gov.uk</a>, which "
+"currently lists 8,000 government datasets. Official public data from most"
+" European countries is listed in a CKAN catalogue at <a "
+"href=\"https://www.europeandataportal.eu\" "
+"target=\"_blank\">europeandataportal.eu</a>. There is a comprehensive "
+"list of catalogues like these around the world at <a "
+"href=\"http://dataportals.org\" target=\"_blank\">dataportals.org</a>, "
+"which is itself powered by CKAN.</p> <h2>Open data and the Open Knowledge"
+" Foundation</h2> <p>Most of the data indexed at %(site_title)s are openly"
+" licensed, meaning anyone is free to use or re-use the data however they "
+"like. Perhaps someone will take that nice dataset of a city's public art "
+"that you found, and add it to a tourist map, or even make a neat app for "
+"your phone that will help you find artworks when you visit the city. Open"
+" data means more enterprise, collaborative science and transparent "
+"government. You can read more about open data in the <a "
 "href=\"http://opendatahandbook.org\" target=\"_blank\">Open Data "
 "Handbook</a>.</p> <p i18n:msg=\"\">The <a href=\"https://okfn.org\" "
-"target=\"_blank\">Open Knowledge Foundation</a> is a non-profit organisation "
-"<a href=\"https://okfn.org/about\" target=\"_blank\">promoting</a> open "
-"knowledge: writing and improving CKAN is one of the ways we do that. If you "
-"want to get involved with its design or code, join the discussion or "
-"development <a href=\"https://ckan.org/contact-us\" target=\"_blank\">mailing"
-" lists</a>, or take a look at the <a href=\"https://okfn.org\" "
-"target=\"_blank\">OKFN</a> site to find out about our other projects.</p> "
+"target=\"_blank\">Open Knowledge Foundation</a> is a non-profit "
+"organisation <a href=\"https://okfn.org/about\" "
+"target=\"_blank\">promoting</a> open knowledge: writing and improving "
+"CKAN is one of the ways we do that. If you want to get involved with its "
+"design or code, join the discussion or development <a "
+"href=\"https://ckan.org/contact-us\" target=\"_blank\">mailing lists</a>,"
+" or take a look at the <a href=\"https://okfn.org\" "
+"target=\"_blank\">OKFN</a> site to find out about our other projects.</p>"
 msgstr ""
-" <h2>Was ist %(site_title)s?</h2>"
+"<h2>Was ist %(site_title)s?</h2>"
 "<p>Wo genau war nochmal die Grundschule, die Ihrem zu Hause am nächsten ist "
 "und die Ihre Kinder gut erreichen können, ohne dabei viele Straßen überqueren "
 "zu müssen? Können Sie Ihren Arbeitsplatz durchgängig über Fahrradwege erreichen? "
@@ -163,94 +187,99 @@ msgstr ""
 "CKAN und andere Projekte zu erfahren.</p>"
 " "
 
-#: ckanext/hro_theme/templates/home/snippets/api_info_text.html:1
-#, python-format
 msgid ""
-" <p>%(site_title)s not only comes with an intuitive user interface but also "
-"with an extensive application programming interface (API). The API "
-"facilitates the use of all functionalities provided by the open-source data "
-"cataloguing software CKAN which is at the basis of %(site_title)s: searching "
-"for datasets, viewing the metadata (descriptive information) of a specific "
-"dataset, or filtering the contents of ressources and linking ressources.</p> "
-"<p>As both input and output format, the API uses <a "
+"<p>%(site_title)s not only comes with an intuitive user interface but "
+"also with an extensive application programming interface (API). The API "
+"facilitates the use of all functionalities provided by the open-source "
+"data cataloguing software CKAN which is at the basis of %(site_title)s: "
+"searching for datasets, viewing the metadata (descriptive information) of"
+" a specific dataset, or filtering the contents of ressources and linking "
+"ressources.</p> <p>As both input and output format, the API uses <a "
 "href=\"https://de.wikipedia.org/wiki/JavaScript_Object_Notation\" "
 "target=\"_blank\">JSON</a>. An example API call (to show the dataset "
 "<code>apotheken</code>) looks like this: <a "
 "href=\"%(api_url)s/package_show?id=apotheken\" "
 "target=\"_blank\">%(api_url)s/package_show?id=apotheken</a>.</p> <p>A "
-"detailed description of the application programming interface can be found "
-"within the <a href=\"%(api_doc_url)s\" target=\"_blank\">documentation</a> of"
-" CKAN.</p> <h2>Searching for datasets and viewing metadata</h2> <p><a "
+"detailed description of the application programming interface can be "
+"found within the <a href=\"%(api_doc_url)s\" "
+"target=\"_blank\">documentation</a> of CKAN.</p> <h2>Searching for "
+"datasets and viewing metadata</h2> <p><a "
 "href=\"%(api_url)s/package_search?q=apothek\" "
-"target=\"_blank\">%(api_url)s/package_search?q=apothek</a></p> <p>On calling "
-"the above URL, datasets are searched for containing the search key "
-"<code>apothek</code>. During the search process various metadata fields are "
-"scanned and therefore all datasets are returned as results that contain the "
-"search key in one of their metadata fields.</p> <p>Once the wanted dataset "
-"and hence its ID was identified amongst the search results, all the "
-"information of the dataset can now be queried by calling the following URL "
-"(of which the last part equals the dataset ID):</p> <p><a "
-"href=\"%(api_url)s/package_show?id=652e7b9e-5bb2-4a7e-aeff-12421d3c32a5\" "
-"target=\"_blank\">%(api_url)s/package_show?id=652e7b9e-5bb2-4a7e-aeff-"
-"12421d3c32a5</a>.</p> <p>A (shortened) result, then, could appear as "
-"follows:</p> <pre class=\"well\">{ help: […], success: true, result: { id: "
-"\"652e7b9e-5bb2-4a7e-aeff-12421d3c32a5\", name: \"apotheken\", title: "
-"\"Apotheken\", maintainer: \"Hanse- und Universitätsstadt Rostock – Kataster-, Vermessungs- und"
-" Liegenschaftsamt\", maintainer_email: \"geodienste@rostock.de\", […] "
+"target=\"_blank\">%(api_url)s/package_search?q=apothek</a></p> <p>On "
+"calling the above URL, datasets are searched for containing the search "
+"key <code>apothek</code>. During the search process various metadata "
+"fields are scanned and therefore all datasets are returned as results "
+"that contain the search key in one of their metadata fields.</p> <p>Once "
+"the wanted dataset and hence its ID was identified amongst the search "
+"results, all the information of the dataset can now be queried by calling"
+" the following URL (of which the last part equals the dataset ID):</p> "
+"<p><a href=\"%(api_url)s/package_show?id=652e7b9e-5bb2-4a7e-aeff-"
+"12421d3c32a5\" target=\"_blank\">%(api_url)s/package_show?id=652e7b9e-"
+"5bb2-4a7e-aeff-12421d3c32a5</a>.</p> <p>A (shortened) result, then, could"
+" appear as follows:</p> <pre class=\"well\">{ help: […], success: true, "
+"result: { id: \"652e7b9e-5bb2-4a7e-aeff-12421d3c32a5\", name: "
+"\"apotheken\", title: \"Apotheken\", maintainer: \"Hanse- und "
+"Universitätsstadt Rostock – Kataster-, Vermessungs- und "
+"Liegenschaftsamt\", maintainer_email: \"geodienste@rostock.de\", […] "
 "resources: [ { id: \"0c2c4996-afad-4ebe-9a3d-a3a7d7047a4d\", name: "
 "\"Apotheken\", url: "
 "\"https://geo.sv.rostock.de/download/opendata/apotheken/apotheken.csv\", "
 "format: \"CSV\", mimetype: \"text/x-comma-separated-values\", size: "
 "\"18081\", hash: "
-"\"sha256:e056f7335e2ee420d9485a86c3924b54fff27a2e7edeb4bdd5f6278e8d41ddd6\", "
-"[…] }, […] ], […] tags: [ { id: \"fbf2dd06-001b-4788-bd98-168a6df82bd3\", "
-"name: \"Arzneimittel\", […] }, […] ], […] groups: [ { id: \"08b0e154-77d7"
-"-440f-ab7b-70511004a405\", name: \"gesundheit\", title: \"Gesundheit\", […] "
-"}, […] ], […] }</pre> <p>The output is very comprehensive and should be "
-"analysed in detail during the first queries. The most important information "
-"in the above (shortened) result is: <ul> <li>A ressource in CSV file format "
-"is available under <a "
-"href=\"https://geo.sv.rostock.de/download/opendata/apotheken/apotheken.csv\" "
+"\"sha256:e056f7335e2ee420d9485a86c3924b54fff27a2e7edeb4bdd5f6278e8d41ddd6\","
+" […] }, […] ], […] tags: [ { id: "
+"\"fbf2dd06-001b-4788-bd98-168a6df82bd3\", name: \"Arzneimittel\", […] }, "
+"[…] ], […] groups: [ { id: \"08b0e154-77d7-440f-ab7b-70511004a405\", "
+"name: \"gesundheit\", title: \"Gesundheit\", […] }, […] ], […] }</pre> "
+"<p>The output is very comprehensive and should be analysed in detail "
+"during the first queries. The most important information in the above "
+"(shortened) result is: <ul> <li>A ressource in CSV file format is "
+"available under <a "
+"href=\"https://geo.sv.rostock.de/download/opendata/apotheken/apotheken.csv\""
+" "
 "target=\"_blank\">https://geo.sv.rostock.de/download/opendata/apotheken/apotheken.csv</a>."
-" It is 18081 bytes in size. What is very important in terms of a ressource is"
-" its hash value which can be used for proving the integrity of the file.</li>"
-" <li>The tags (key words) assigned to this dataset are of interest "
-"particularly for searching purposes.</li> <li>The dataset is allocated to "
-"category <code>08b0e154-77d7-440f-ab7b-70511004a405</code>. A list of all datasets or "
-"further information of a certain category can be viewed either by using the "
-"web interface or by calling the API: <a "
+" It is 18081 bytes in size. What is very important in terms of a "
+"ressource is its hash value which can be used for proving the integrity "
+"of the file.</li> <li>The tags (key words) assigned to this dataset are "
+"of interest particularly for searching purposes.</li> <li>The dataset is "
+"allocated to category <code>08b0e154-77d7-440f-ab7b-70511004a405</code>. "
+"A list of all datasets or further information of a certain category can "
+"be viewed either by using the web interface or by calling the API: <a "
 "href=\"%(api_url)s/group_show?id=08b0e154-77d7-440f-ab7b-70511004a405\" "
 "target=\"_blank\">%(api_url)s/group_show?id=08b0e154-77d7-440f-ab7b-"
-"70511004a405</a>.</li> <li>The dataset provides a description with additional"
-" details such as the update interval or information about the contents of the"
-" ressources.</li> </ul> </p> <h2>Filtering the contents of ressources and "
-"linking ressources</h2> <p>Particularly when mobile devices are used or when "
-"only a low data transfer rate is available, it is advantageous to be able to "
-"download specific extracts of ressources (i.e. to filter ressources) and not "
-"having to download the complete ressources: The CKAN DataStore which is "
-"enabled for certain ressources provides the functionality of filtering. To "
-"check whether the DataStore is enabled for a certain ressource either the web"
-" interface can be used (via the site listing all the details of the "
-"ressource) or the API can be called by passing the correspondent "
-"ressource ID (e.g. the ID <code>290cdf3c-33eb-44a8-963e-65a0ee140a45</code>): <a "
+"70511004a405</a>.</li> <li>The dataset provides a description with "
+"additional details such as the update interval or information about the "
+"contents of the ressources.</li> </ul> </p> <h2>Filtering the contents of"
+" ressources and linking ressources</h2> <p>Particularly when mobile "
+"devices are used or when only a low data transfer rate is available, it "
+"is advantageous to be able to download specific extracts of ressources "
+"(i.e. to filter ressources) and not having to download the complete "
+"ressources: The CKAN DataStore which is enabled for certain ressources "
+"provides the functionality of filtering. To check whether the DataStore "
+"is enabled for a certain ressource either the web interface can be used "
+"(via the site listing all the details of the ressource) or the API can be"
+" called by passing the correspondent ressource ID (e.g. the ID <code"
+">290cdf3c-33eb-44a8-963e-65a0ee140a45</code>): <a "
 "href=\"%(api_url)s/datastore_search?resource_id=290cdf3c-33eb-44a8-963e-"
 "65a0ee140a45\" target=\"_blank\">%(api_url)s/datastore_search?resource_id"
-"=290cdf3c-33eb-44a8-963e-65a0ee140a45</a>. The output will consist either of "
-"an error message (if the DataStore is not enabled) or of all the contents of "
-"the DataStore for this particular ressource.</p> <p>If the DataStore is "
-"enabled for a certain ressource, either simple operations can be executed "
-"(with the already shown <code>datastore_search</code> function) or more complex operations"
-" such as SQL queries can be executed (with the <code>datastore_search_sql</code> "
-"function). When using SQL queries, all columns that shall be presented in the"
-" result must be explicitly indicated: otherwise errors may arise.</p> <p>A "
-"simple example for linking two datasets by means of location and, at the same"
-" time, for filtering the contents based on location as well could appear as "
+"=290cdf3c-33eb-44a8-963e-65a0ee140a45</a>. The output will consist either"
+" of an error message (if the DataStore is not enabled) or of all the "
+"contents of the DataStore for this particular ressource.</p> <p>If the "
+"DataStore is enabled for a certain ressource, either simple operations "
+"can be executed (with the already shown <code>datastore_search</code> "
+"function) or more complex operations such as SQL queries can be executed "
+"(with the <code>datastore_search_sql</code> function). When using SQL "
+"queries, all columns that shall be presented in the result must be "
+"explicitly indicated: otherwise errors may arise.</p> <p>A simple example"
+" for linking two datasets by means of location and, at the same time, for"
+" filtering the contents based on location as well could appear as "
 "follows:</p> <pre class=\"well\">SELECT bezeichnung, strasse_name, "
-"hausnummer, hausnummer_zusatz FROM \"0c2c4996-afad-4ebe-9a3d-a3a7d7047a4d\" "
-"WHERE ST_Within(ST_Transform(geometrie,25833),ST_Buffer(ST_Transform((SELECT "
-"geometrie FROM \"e614d725-4fad-4447-820d-4475ca55cff5\" WHERE bezeichnung = "
-"'Deutsche Med'),25833),300))</pre> <p>This command can be executed via the "
-"API by calling the following URL:</p> <p><a target=\"_blank\" "
+"hausnummer, hausnummer_zusatz FROM \"0c2c4996-afad-4ebe-9a3d-"
+"a3a7d7047a4d\" WHERE "
+"ST_Within(ST_Transform(geometrie,25833),ST_Buffer(ST_Transform((SELECT "
+"geometrie FROM \"e614d725-4fad-4447-820d-4475ca55cff5\" WHERE bezeichnung"
+" = 'Deutsche Med'),25833),300))</pre> <p>This command can be executed via"
+" the API by calling the following URL:</p> <p><a target=\"_blank\" "
 "href=\"%(api_url)s/datastore_search_sql?sql=SELECT%%20bezeichnung,%%20strasse_name,%%20hausnummer,%%20hausnummer_zusatz%%20FROM%%20%%220c2c4996"
 "-afad-4ebe-9a3d-"
 "a3a7d7047a4d%%22%%20WHERE%%20ST_Within(ST_Transform(geometrie,25833),ST_Buffer(ST_Transform((SELECT%%20geometrie%%20FROM%%20%%22e614d725-4fad-4447"
@@ -259,10 +288,11 @@ msgid ""
 " bezeichnung, strasse_name, hausnummer, hausnummer_zusatz FROM \"0c2c4996"
 "-afad-4ebe-9a3d-a3a7d7047a4d\" WHERE "
 "ST_Within(ST_Transform(geometrie,25833),ST_Buffer(ST_Transform((SELECT "
-"geometrie FROM \"e614d725-4fad-4447-820d-4475ca55cff5\" WHERE bezeichnung = "
-"'Deutsche Med'),25833),300))</a></p> <p>A detailed description of the "
-"DataStore API can be found within the <a href=\"%(datastore_api_doc_url)s\" "
-"target=\"_blank\">documentation</a> of CKAN.</p> "
+"geometrie FROM \"e614d725-4fad-4447-820d-4475ca55cff5\" WHERE bezeichnung"
+" = 'Deutsche Med'),25833),300))</a></p> <p>A detailed description of the "
+"DataStore API can be found within the <a "
+"href=\"%(datastore_api_doc_url)s\" target=\"_blank\">documentation</a> of"
+" CKAN.</p>"
 msgstr ""
 "<p>%(site_title)s verfügt neben der intuitiven Web-Oberfläche über eine umfassende "
 "Programmierschnittstelle (API), mit der alle Funktionen der zugrundeliegenden Open-Source-Software "
@@ -338,88 +368,86 @@ msgstr ""
 "Beschreibung der DataStore-API ist zu finden in der <a href=\"%(datastore_api_doc_url)s\" "
 "target=\"_blank\">Dokumentation</a> von CKAN.</p>"
 
-#: ckanext/hro_theme/templates/home/snippets/imprint_text.html:1
 msgid ""
-" <h2>Publisher</h2> <p>Municipality of Rostock<br/>Office of the "
-"Mayor<br/>Press Office<br/>18050 Rostock<br/><span>telephone:</span> +49 381 "
-"381-1417<br/><span>telefax:</span> +49 381 381-9130<br/><span>email:</span> "
-"<a href=\"mailto:presse@rostock.de\">presse@rostock.de</a></p> <h2>VAT "
+"<h2>Publisher</h2> <p>Municipality of Rostock<br/>Office of the "
+"Mayor<br/>Press Office<br/>18050 Rostock<br/><span>telephone:</span> +49 "
+"381 381-1417<br/><span>email:</span> <a "
+"href=\"mailto:presse@rostock.de\">presse@rostock.de</a></p> <h2>VAT "
 "identification number</h2> <p>DE 137385469</p> <h2>Responsibility</h2> "
-"<p>Municipality of Rostock<br/>Office of the Mayor<br/>Ulrich Kunze<br/>Press"
-" Officer<br/>Hinter dem Rathaus 5<br/>18050 "
+"<p>Municipality of Rostock<br/>Office of the Mayor<br/>Ulrich "
+"Kunze<br/>Press Officer<br/>Hinter dem Rathaus 5<br/>18050 "
 "Rostock<br/><span>telephone:</span> +49 381 "
-"381-1418<br/><span>telefax:</span> +49 381 381-9135<br/><span>email:</span> "
-"<a href=\"mailto:ulrich.kunze@rostock.de\">ulrich.kunze@rostock.de</a></p> "
-"<h2>Concept and technical support</h2> <p>Municipality of Rostock<br/>Land "
-"Registry Office<br/>Holbeinplatz 14<br/>18069 "
-"Rostock<br/><span>telephone:</span> +49 381 "
-"381-6281<br/><span>telefax:</span> +49 381 381-6902<br/><span>email:</span> "
-"<a href=\"mailto:opendata.hro@rostock.de\">opendata.hro@rostock.de</a></p> "
-"<h2>Licensing terms</h2> <p>This web application offered by the municipality "
-"of Rostock is based on <a href=\"https://ckan.org\" "
+"381-1418<br/><span>email:</span> <a "
+"href=\"mailto:ulrich.kunze@rostock.de\">ulrich.kunze@rostock.de</a></p> "
+"<h2>Concept and technical support</h2> <p>Municipality of "
+"Rostock<br/>Land Registry Office<br/>Holbeinplatz 14<br/>18069 "
+"Rostock<br/><span>email:</span> <a "
+"href=\"mailto:opendata.hro@rostock.de\">opendata.hro@rostock.de</a></p> "
+"<h2>Licensing terms</h2> <p>This web application offered by the "
+"municipality of Rostock is based on <a href=\"https://ckan.org\" "
 "target=\"_blank\">CKAN</a>, a web-based system for the storage and "
 "distribution of data. The original author of CKAN is the <a "
-"href=\"https://okfn.org\" target=\"_blank\">Open Knowledge Foundation</a>. It"
-" published its work under the <a rel=\"license\" "
+"href=\"https://okfn.org\" target=\"_blank\">Open Knowledge "
+"Foundation</a>. It published its work under the <a rel=\"license\" "
 "href=\"http://www.gnu.org/licenses/agpl-3.0.html\" target=\"_blank\">GNU "
 "Affero General Public License 3.0</a> (AGPL 3.0).</p> <p>The custom CKAN-"
 "template for this web application is published <a "
 "href=\"https://github.com/rostock/ckanext-hro_theme\" "
 "target=\"_blank\">here</a> under the AGPL 3.0.</p> <h2>Offered data and "
 "content</h2> <p>The municipality of Rostock takes no liability for the "
-"correctness, integrity or actuality for the data and content offered via this"
-" web application. Most notably, the municipality of Rostock takes no "
-"liability for any damages arising from using or not using use either this web"
-" application or any of its data or content. Furthermore, the municipality of "
-"Rostock reserves the right to change, delete or unpublish either this web "
-"application or its data or content without any special announcement.</p> "
-"<h2>Third party links</h2> <p>The municipality of Rostock takes no "
-"responsibility or liability for the content and activities of linked third "
-"party sites. Responsible for those sites is their respective owner. "
-"Nonetheless, the municipality of Rostock seeks to protect the integrity of "
-"this web application and welcomes any feedback about linked third party "
-"sites.</p> <h2>Copyright</h2> <p>The data owned by the municipality of "
-"Rostock and offered via this web application are, unless otherwise specified,"
-" made available under the <a rel=\"license\" "
+"correctness, integrity or actuality for the data and content offered via "
+"this web application. Most notably, the municipality of Rostock takes no "
+"liability for any damages arising from using or not using use either this"
+" web application or any of its data or content. Furthermore, the "
+"municipality of Rostock reserves the right to change, delete or unpublish"
+" either this web application or its data or content without any special "
+"announcement.</p> <h2>Third party links</h2> <p>The municipality of "
+"Rostock takes no responsibility or liability for the content and "
+"activities of linked third party sites. Responsible for those sites is "
+"their respective owner. Nonetheless, the municipality of Rostock seeks to"
+" protect the integrity of this web application and welcomes any feedback "
+"about linked third party sites.</p> <h2>Copyright</h2> <p>The data owned "
+"by the municipality of Rostock and offered via this web application are, "
+"unless otherwise specified, made available under the <a rel=\"license\" "
 "href=\"https://creativecommons.org/publicdomain/zero/1.0\" "
 "target=\"_blank\">Creative Commons Zero Universal 1.0 Public Domain "
-"Dedication</a> (CC0 1.0). This means that you can do what ever you want with "
-"the data without having to ask for further permission.</p> <p>The ORKa.MV "
-"map, owned by the municipality of Rostock and offered via this web "
-"application, is made available under the <a rel=\"license\" "
+"Dedication</a> (CC0 1.0). This means that you can do what ever you want "
+"with the data without having to ask for further permission.</p> <p>The "
+"ORKa.MV map, owned by the municipality of Rostock and offered via this "
+"web application, is made available under the <a rel=\"license\" "
 "href=\"https://creativecommons.org/licenses/by/4.0\" "
-"target=\"_blank\">Creative Commons Attribution 4.0 International</a> (CC BY "
-"4.0). This means that you are free to copy, distribute and transmit the map, "
-"to adapt the map, and to make commercial use of the map as long as you "
-"attribute the map in the following manner: © Hanse- und Universitätsstadt Rostock (CC BY "
-"4.0).</p> <p>The other content owned by the municipality of Rostock and "
-"offered via this web application is made available under CC BY 4.0. This "
-"means that you are free to copy, distribute and transmit the other content, "
-"to adapt the other content, and to make commercial use of the other content "
-"as long as you attribute the other content in the following manner: © "
-"Hanse- und Universitätsstadt Rostock (CC BY 4.0).</p> <h2>Links to this web application</h2> "
-"<p>Links to this web application by third parties are explicitly welcome.</p>"
-" <h2>Accessibility</h2> <p>The municipality of Rostock aims to keep its web "
-"applications accessible for everyone.</p> <h2>Using the contact "
-"information</h2> <p>The municipality of Rostock prohibits the unsolicited "
-"usage of its contact information published here.</p> <h2>Contact</h2> "
+"target=\"_blank\">Creative Commons Attribution 4.0 International</a> (CC "
+"BY 4.0). This means that you are free to copy, distribute and transmit "
+"the map, to adapt the map, and to make commercial use of the map as long "
+"as you attribute the map in the following manner: © Hanse- und "
+"Universitätsstadt Rostock (CC BY 4.0).</p> <p>The other content owned by "
+"the municipality of Rostock and offered via this web application is made "
+"available under CC BY 4.0. This means that you are free to copy, "
+"distribute and transmit the other content, to adapt the other content, "
+"and to make commercial use of the other content as long as you attribute "
+"the other content in the following manner: © Hanse- und Universitätsstadt"
+" Rostock (CC BY 4.0).</p> <h2>Links to this web application</h2> <p>Links"
+" to this web application by third parties are explicitly welcome.</p> "
+"<h2>Accessibility</h2> <p>The municipality of Rostock aims to keep its "
+"web applications accessible for everyone.</p> <h2>Using the contact "
+"information</h2> <p>The municipality of Rostock prohibits the unsolicited"
+" usage of its contact information published here.</p> <h2>Contact</h2> "
 "<p>Please feel free to address your questions, wishes or suggestions "
 "to:<br/><a "
-"href=\"mailto:opendata.hro@rostock.de\">opendata.hro@rostock.de</a></p> "
+"href=\"mailto:opendata.hro@rostock.de\">opendata.hro@rostock.de</a></p>"
 msgstr ""
-" <h2>Herausgeberin</h2> <p>Hanse- und Universitätsstadt Rostock<br />Büro des Oberbürgermeisters"
+"<h2>Herausgeberin</h2> <p>Hanse- und Universitätsstadt Rostock<br />Büro des Oberbürgermeisters"
 "<br />Presse- und Informationsstelle<br />18050 Rostock<br /><span>Telefon:"
-"</span> +49 381 381-1417<br /><span>Telefax:</span> +49 381 381-9130<br />"
+"</span> +49 381 381-1417<br />"
 "<span>E-Mail:</span> <a href=\"mailto:presse@rostock.de\">presse@rostock.de</a></p> <h2>Umsatzsteuer-Identifikationsnummer "
 "gemäß § 27a Umsatzsteuergesetz</h2> <p>DE 137385469</p> <h2>Verantwortung gemäß "
 "§ 7 Abs. 1 Telemediengesetz</h2> <p>Hanse- und Universitätsstadt Rostock<br />Büro des Oberbürgermeisters"
 "<br />Ulrich Kunze<br />Pressesprecher Presse- und Informationsstelle<br />"
 "Hinter dem Rathaus 5<br />18050 Rostock<br /><span>Telefon:</span> +49 381 381-1418"
-"<br /><span>Telefax:</span> +49 381 381-9135<br /><span>E-Mail:</span> "
+"<br /><span>E-Mail:</span> "
 "<a href=\"mailto:ulrich.kunze@rostock.de\">ulrich.kunze@rostock.de</a></p> <h2>Konzept, Betreuung und technische Realisierung"
 "</h2> <p>Hanse- und Universitätsstadt Rostock<br />Kataster-, Vermessungs- und Liegenschaftsamt<br />"
-"Holbeinplatz 14<br />18069 Rostock<br /><span>Telefon:</span> +49 381 381-6281<br />"
-"<span>Telefax:</span> +49 381 381-6902<br /><span>E-Mail:</span> "
+"Holbeinplatz 14<br />18069 Rostock<br /><span>E-Mail:</span> "
 "<a href=\"mailto:opendata.hro@rostock.de\">opendata.hro@rostock.de</a></p> "
 "<h2>Lizenzbestimmungen</h2> <p>Das vorliegenden Angebot der Hanse- und Universitätsstadt Rostock "
 "basiert auf <a href=\"https://ckan.org\" target=\"_blank\">CKAN</a>, einem webbasierten "
@@ -482,9 +510,7 @@ msgstr ""
 "Werbe- oder Informationsmaterialien vor.</p> <h2>Kontakt</h2> <p>Kommentare, Anregungen und Kritik zu dem "
 "vorliegenden Angebot der Hanse- und Universitätsstadt Rostock richten Sie bitte an:<br />"
 "<a href=\"mailto:opendata.hro@rostock.de\">opendata.hro@rostock.de</a></p>"
-    
 
-#: ckanext/hro_theme/templates/home/snippets/privacy_policy_text.html:1
 msgid ""
 "<h2>Using this web application</h2> <p>You can use this web application "
 "offered by the municipality of Rostock completely without having to "
@@ -510,11 +536,9 @@ msgstr ""
 "<p>Hanse- und Universitätsstadt Rostock<br/>Büro des Oberbürgermeisters<br/>Behördlicher Datenschutz<br/>18050 Rostock<br/>"
 "<a href=\"mailto:datenschutz@rostock.de\">datenschutz@rostock.de</a></p>"
 
-#: ckanext/hro_theme/templates/home/snippets/promoted.html:8
 msgid "Welcome to {0}!"
 msgstr "Willkommen bei {0}!"
 
-#: ckanext/hro_theme/templates/home/snippets/promoted.html:10
 msgid ""
 "The municipality of Rostock collects and manages a multitude of data. "
 "These data have huge potential for innovations as long as they are "
@@ -531,11 +555,28 @@ msgstr ""
 "insbesondere auch für kommerzielle Zwecke. Das vorliegende Portal dient "
 "als zentrale Plattform zur Veröffentlichung offener Daten der Hanse- und Universitätsstadt Rostock."
 
-#: ckanext/hro_theme/templates/home/snippets/terms_of_use_text.html:1
+msgid "{0} statistics"
+msgstr "{0}-Statistiken"
+
+msgid "Dataset"
+msgstr "Datensatz"
+
+msgid "Organization"
+msgstr "Organisation"
+
+msgid "Organizations"
+msgstr "Organisationen"
+
+msgid "Group"
+msgstr "Kategorie"
+
+msgid "Groups"
+msgstr "Kategorien"
+
 msgid ""
-" <h2>Using the data of the municipality of Rostock</h2> <p>The data owned"
-" by the municipality of Rostock and offered via this web application are,"
-" unless otherwise specified, made available under the <a rel=\"license\" "
+"<h2>Using the data of the municipality of Rostock</h2> <p>The data owned "
+"by the municipality of Rostock and offered via this web application are, "
+"unless otherwise specified, made available under the <a rel=\"license\" "
 "href=\"https://creativecommons.org/publicdomain/zero/1.0\" "
 "target=\"_blank\">Creative Commons Zero Universal 1.0 Public Domain "
 "Dedication</a> (CC0 1.0). This means that you can do what ever you want "
@@ -546,18 +587,20 @@ msgid ""
 "target=\"_blank\">Creative Commons Attribution 4.0 International</a> (CC "
 "BY 4.0). This means that you are free to copy, distribute and transmit "
 "the map, to adapt the map, and to make commercial use of the map as long "
-"as you attribute the map in the following manner: © Hanse- und Universitätsstadt Rostock "
-"(CC BY 4.0).</p> <h2>Using the other content of the municipality of "
-"Rostock</h2> <p>The other content owned by the municipality of Rostock "
-"and offered via this web application is made available under CC BY 4.0. "
-"This means that you are free to copy, distribute and transmit the other "
-"content, to adapt the other content, and to make commercial use of the "
-"other content as long as you attribute the other content in the following"
-" manner: © Hanse- und Universitätsstadt Rostock (CC BY 4.0).</p> <h2>Using the data of the "
-"OpenStreetMap project</h2> <p>The data owned by the contributors of the "
-"<a href=\"https://www.openstreetmap.org\" "
+"as you attribute the map in the following manner: © Hanse- und "
+"Universitätsstadt Rostock (CC BY 4.0).</p> <h2>Using the other content of"
+" the municipality of Rostock</h2> <p>The other content owned by the "
+"municipality of Rostock and offered via this web application is made "
+"available under CC BY 4.0. This means that you are free to copy, "
+"distribute and transmit the other content, to adapt the other content, "
+"and to make commercial use of the other content as long as you attribute "
+"the other content in the following manner: © Hanse- und Universitätsstadt"
+" Rostock (CC BY 4.0).</p> <h2>Using the data of the OpenStreetMap "
+"project</h2> <p>The data owned by the contributors of the <a "
+"href=\"https://www.openstreetmap.org\" "
 "target=\"_blank\">OpenStreetMap</a> project are made available under the "
-"<a rel=\"license\" href=\"https://opendatacommons.org/licenses/odbl/index.html\" "
+"<a rel=\"license\" "
+"href=\"https://opendatacommons.org/licenses/odbl/index.html\" "
 "target=\"_blank\">Open Data Commons Open Database License</a> (ODbL). For"
 " processing these data the municipality of Rostock uses the open-source "
 "software <a href=\"https://imposm.org\" target=\"_blank\">Imposm</a>. In "
@@ -574,22 +617,22 @@ msgid ""
 "distribution of data. The original author of CKAN is the <a "
 "href=\"https://okfn.org\" target=\"_blank\">Open Knowledge "
 "Foundation</a>. It published its work under the <a rel=\"license\" "
-"href=\"https://www.gnu.org/licenses/agpl-3.0.html\" target=\"_blank\">GNU "
-"Affero General Public License 3.0</a> (AGPL 3.0).</p> <p>The custom CKAN-"
-"template for this web application is published <a "
+"href=\"https://www.gnu.org/licenses/agpl-3.0.html\" target=\"_blank\">GNU"
+" Affero General Public License 3.0</a> (AGPL 3.0).</p> <p>The custom "
+"CKAN-template for this web application is published <a "
 "href=\"https://github.com/rostock/ckanext-hro_theme\" "
 "target=\"_blank\">here</a> under the AGPL 3.0.</p> <p>The font used "
-"within this web application is called PT Sans. It was created in "
-"2009 by <a href=\"https://www.paratype.com\" "
-"target=\"_blank\">ParaType</a> and is published <a "
-"href=\"https://www.paratype.com/public\" target=\"_blank\">here</a> under"
-" <a rel=\"license\" href=\"https://www.paratype.com/public/pt_openlicense_eng.asp\" target=\"_blank\">this "
-"license</a>. <p>The icons used within this web application for "
-"illustrating the groups of datasets were created by <a "
+"within this web application is called PT Sans. It was created in 2009 by "
+"<a href=\"https://www.paratype.com\" target=\"_blank\">ParaType</a> and "
+"is published <a href=\"https://www.paratype.com/public\" "
+"target=\"_blank\">here</a> under <a rel=\"license\" "
+"href=\"https://www.paratype.com/public/pt_openlicense_eng.asp\" "
+"target=\"_blank\">this license</a>. <p>The icons used within this web "
+"application for illustrating the groups of datasets were created by <a "
 "href=\"https://www.seitenbau.com\" target=\"_blank\">SEITENBAU</a> and "
 "are published <a "
 "href=\"https://github.com/GovDataOfficial/GovDataPortal\" "
-"target=\"_blank\">here</a> under the AGPL 3.0.</p> "
+"target=\"_blank\">here</a> under the AGPL 3.0.</p>"
 msgstr ""
 "<h2>Nutzung der Daten der Hanse- und Universitätsstadt Rostock</h2> <p>Die von der Hanse- und Universitätsstadt Rostock angebotenen "
 "und in ihrem Eigentum befindlichen Daten unterliegen, sofern nicht anders angegeben, der gemeinfreien "
@@ -635,375 +678,136 @@ msgstr ""
 "href=\"https://github.com/GovDataOfficial/GovDataPortal\" "
 "target=\"_blank\">hier</a> veröffentlicht unter der freien AGPL 3.0.</p>"
 
-#: ckanext/hro_theme/templates/package/read.html:11
 msgid "Private"
 msgstr "Privat"
 
-#: ckanext/hro_theme/templates/package/read.html:18
+msgid ""
+"You're currently viewing an old version of this dataset. To see the "
+"current version, click <a href=\"%(url)s\">here</a>."
+msgstr ""
+"Sie sehen gerade eine veraltete Version dieses Datensatzes. Um die "
+"aktuelle Version zu sehen, klicken Sie bitte <a href=\"%(url)s\">hier</a>."
+
 msgid "Draft"
 msgstr "Entwurf"
 
-#: ckanext/hro_theme/templates/package/read.html:21
-msgid "Deleted"
-msgstr "Gelöscht"
-
-#: ckanext/hro_theme/templates/package/read_base.html:14
-#: ckanext/hro_theme/templates/package/resource_read.html:31
 msgid "Manage"
 msgstr "Verwalten"
 
-#: ckanext/hro_theme/templates/package/read_base.html:19
-msgid "Dataset"
-msgstr "Datensatz"
-
-#: ckanext/hro_theme/templates/package/read_base.html:20
-msgid "Groups"
-msgstr "Kategorien"
-
-#: ckanext/hro_theme/templates/package/read_base.html:21
-msgid "Activity Stream"
-msgstr "Aktivitätsanzeige"
-
-#: ckanext/hro_theme/templates/package/read_base.html:22
-msgid "Showcases"
-msgstr "Datennutzungen"
-
-#: ckanext/hro_theme/templates/package/read_base.html:33
-#, python-format
-msgid ""
-"This is an old revision of this dataset, as edited at %(timestamp)s. It "
-"may differ significantly from the <a href=\"%(url)s\">current "
-"revision</a>."
-msgstr "Dies ist eine veraltete Version des Datensatzes, bearbeitet zum Zeitpunkt %(timestamp)s. Sie kann unter Umständen erheblich von der <a href=\"%(url)s\">aktuellen Version</a> abweichen."
-
-#: ckanext/hro_theme/templates/package/resource_read.html:37
-msgid "View"
-msgstr "Vorschauansicht"
-
-#: ckanext/hro_theme/templates/package/resource_read.html:37
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:43
 msgid "API Endpoint"
 msgstr "API aufrufen"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:43
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:44
 msgid "Download"
 msgstr "Download"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:56
-#: ckanext/hro_theme/templates/package/resource_read.html:58
 msgid "URL:"
 msgstr "Link:"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:66
-msgid "From the dataset abstract"
-msgstr "Aus der Beschreibung des Datensatzes"
+msgid "Dataset description:"
+msgstr "Beschreibung des Datensatzes:"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:108
-msgid "There are no views created for this resource yet."
-msgstr "Es existiert noch keine Vorschauansicht für diese Ressource."
-
-#: ckanext/hro_theme/templates/package/resource_read.html:112
-msgid "Not seeing the views you were expecting?"
-msgstr "Werden Ihnen nicht die erwarteten Vorschauansichten angezeigt?"
-
-#: ckanext/hro_theme/templates/package/resource_read.html:114
-msgid "Click here for more information."
-msgstr "Klicken Sie hier für weitere Informationen."
-
-#: ckanext/hro_theme/templates/package/resource_read.html:117
-msgid "Here are some reasons you may not be seeing expected views:"
-msgstr "Es kann folgende Ursachen haben, dass Ihnen nicht die erwarteten Vorschauansichten angezeigt werden:"
-
-#: ckanext/hro_theme/templates/package/resource_read.html:119
-msgid "No view has been created that is suitable for this resource"
-msgstr "Für diese Ressource wurde keine passende Vorschauansicht erstellt."
-
-#: ckanext/hro_theme/templates/package/resource_read.html:120
-msgid "The site administrators may not have enabled the relevant view plugins"
-msgstr "Der Administrator hat vermutlich die notwendigen Plug-ins nicht aktiviert, die für die Vorschauansicht notwendig sind."
-
-#: ckanext/hro_theme/templates/package/resource_read.html:121
-msgid ""
-"If a view requires the DataStore, the DataStore plugin may not be "
-"enabled, or the data may not have been pushed to the DataStore, or the "
-"DataStore hasn't finished processing the data yet"
-msgstr ""
-"Es kann sein, dass das DataStore-Plug-in nicht aktiviert ist, die Daten nicht in den DataStore überführt worden sind oder der DataStore gerade beschäftigt ist."
-
-#: ckanext/hro_theme/templates/package/resource_read.html:142
 msgid "Additional Information"
 msgstr "Zusätzliche Informationen"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:146
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:18
 msgid "ID"
 msgstr "ID"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:150
-msgid "Data created"
-msgstr "Veröffentlichungszeitpunkt der Daten"
-
-#: ckanext/hro_theme/templates/package/resource_read.html:154
 msgid "Data last updated"
 msgstr "Aktualisierungszeitpunkt der Daten"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:158
-#: ckanext/hro_theme/templates/snippets/license.html:21
 msgid "License"
 msgstr "Lizenz"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:163
 msgid "DataStore"
 msgstr "DataStore aktiv"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:164
 msgid "yes"
 msgstr "ja"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:164
 msgid "no"
 msgstr "nein"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:169
-#: ckanext/hro_theme/templates/snippets/language_selector.html:3
 msgid "Language"
 msgstr "Sprache"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:175
 msgid "Format"
 msgstr "Format"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:181
 msgid "MIME type"
 msgstr "MIME-Type"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:188
 msgid "Size"
 msgstr "Größe"
 
-#: ckanext/hro_theme/templates/package/resource_read.html:193
 msgid "Hash"
 msgstr "Hashwert"
 
-#: ckanext/hro_theme/templates/package/search.html:4
-#: ckanext/hro_theme/templates/package/search.html:7
-msgid "Datasets"
-msgstr "Datensätze"
-
-#: ckanext/hro_theme/templates/package/search.html:16
-msgid "Add Dataset"
-msgstr "Datensatz hinzufügen"
-
-#: ckanext/hro_theme/templates/package/search.html:29
-msgid "Relevance"
-msgstr "Relevanz"
-
-#: ckanext/hro_theme/templates/package/search.html:29
-msgid "Last Created"
-msgstr "zuletzt hinzugefügt"
-
-#: ckanext/hro_theme/templates/package/search.html:30
-msgid "Last Modified"
-msgstr "zuletzt bearbeitet"
-
-#: ckanext/hro_theme/templates/package/search.html:31
-msgid "Name Ascending"
-msgstr "Titel (aufsteigend)"
-
-#: ckanext/hro_theme/templates/package/search.html:32
-msgid "Name Descending"
-msgstr "Titel (absteigend)"
-
-#: ckanext/hro_theme/templates/package/search.html:33
-msgid "Popular"
-msgstr "Beliebtheit"
-
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:16
-msgid "File"
-msgstr "Datei"
-
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:20
-msgid "API"
-msgstr "API"
-
-#: ckanext/hro_theme/templates/package/search.html:53
-msgid "API Docs"
-msgstr "API-Dokumentation"
-
-#: ckanext/hro_theme/templates/package/search.html:55
-msgid "full {format} dump"
-msgstr "vollständiger {format}-Auszug"
-
-#: ckanext/hro_theme/templates/package/search.html:56
-#, python-format
-msgid ""
-" You can also access this registry using the %(api_link)s (see "
-"%(api_doc_link)s) or download a %(dump_link)s. "
-msgstr ""
-" Sie können dieses Register auch mittels %(api_link)s aufrufen (siehe %(api_doc_link)s) "
-"oder einen %(dump_link)s herunterladen."
-
-#: ckanext/hro_theme/templates/package/search.html:60
-#, python-format
-msgid ""
-" You can also access this registry using the %(api_link)s (see "
-"%(api_doc_link)s). "
-msgstr ""
-" Sie können dieses Register auch mittels %(api_link)s aufrufen (siehe %(api_doc_link)s)."
-
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:2
 msgid "Additional Info"
 msgstr "Zusätzliche Informationen"
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:8
 msgid "Source"
 msgstr "Quelle"
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:24
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:29
 msgid "Maintainer"
 msgstr "Verantwortung"
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:36
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:41
 msgid "Author"
 msgstr "Autorenschaft"
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:48
 msgid "Version"
 msgstr "Version"
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:55
-msgid "State"
-msgstr "Status"
+msgid "Created"
+msgstr "Veröffentlichungszeitpunkt"
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:61
-msgid "Metadata created"
-msgstr "Veröffentlichungszeitpunkt der Metadaten"
+msgid "Last Updated"
+msgstr "Aktualisierungszeitpunkt"
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:70
-msgid "Metadata last updated"
-msgstr "Aktualisierungszeitpunkt der Metadaten"
-
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:75
 msgid "Temporal coverage from"
 msgstr "Beginn der zeitlichen Abdeckung"
 
-#: ckanext/hro_theme/templates/package/snippets/additional_info.html:83
 msgid "Temporal coverage to"
 msgstr "Ende der zeitlichen Abdeckung"
 
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:23
+msgid "File"
+msgstr "Datei"
+
+msgid "API"
+msgstr "API"
+
 msgid "Explore"
 msgstr "Entdecken"
 
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:32
 msgid "Preview and more information"
 msgstr "Vorschau und Details"
 
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:35
 msgid "More information"
 msgstr "Details"
 
-#: ckanext/hro_theme/templates/package/snippets/resource_item.html:56
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: ckanext/hro_theme/templates/package/snippets/resources.html:20
-msgid "Resources"
-msgstr "Ressourcen"
+msgid "Fullscreen"
+msgstr "Bildschirmansicht"
 
-#: ckanext/hro_theme/templates/package/snippets/tags.html:2
-msgid "Tags"
-msgstr "Schlagworte"
+msgid "Embed"
+msgstr "Einbettung"
 
-#: ckanext/hro_theme/templates/package/snippets/view_form_filters.html:20
-msgid "Remove Filter"
-msgstr "Filter entfernen"
-
-#: ckanext/hro_theme/templates/package/snippets/view_form_filters.html:38
-msgid "Filters"
-msgstr "Filter"
-
-#: ckanext/hro_theme/templates/snippets/language_selector.html:11
-msgid "Go"
-msgstr "Weiter"
-
-#: ckanext/hro_theme/templates/snippets/license.html:14
-msgid "No License Provided"
-msgstr "Keine Lizenz angegeben"
-
-#: ckanext/hro_theme/templates/snippets/license.html:28
-msgid "This dataset satisfies the Open Definition."
-msgstr "Dieser Datensatz erfüllt die Anforderungen der Open Definition."
-
-#: ckanext/hro_theme/templates/home/snippets/stats.html:5
-msgid "{0} statistics"
-msgstr "{0}-Statistiken"
-
-#: ckanext/hro_theme/templates/home/snippets/stats.html:22
-msgid "Group"
-msgstr "Kategorie"
-
-#: ckanext/hro_theme/templates/home/snippets/stats.html:28
-msgid "Showcase"
-msgstr "Datennutzung"
-
-#: ckan/templates/home/snippets/search.html:2
-msgid "E.g. environment"
-msgstr "zum Beispiel: Container"
-
-#: ckan/templates/header.html:116
-#: ckan/templates/header.html:117
-#: ckan/templates/home/snippets/search.html:6
-msgid "Search data"
-msgstr "Datensuche"
-
-#: ckan/templates/group/read.html:21 ckan/templates/organization/read.html:25
-#: ckan/templates/snippets/search_form.html:3
-msgid "Search datasets..."
-msgstr "Datensätze suchen…"
-
-#: ckan/templates/snippets/facet_list.html:80
-msgid "Show More {facet_type}"
-msgstr "Alle {facet_type} anzeigen"
-
-#: ckan/templates/snippets/facet_list.html:87
-msgid "There are no {facet_type} that match this search"
-msgstr "Für diesen Suchbegriff wurden keine {facet_type} gefunden."
-
-#: ckan/templates/snippets/search_result_text.html:16
-msgid "No datasets found for \"{query}\""
-msgstr "Keine Datensätze gefunden für den Suchbegriff \"{query}\""
-
-msgid "Filter by location"
-msgstr "Räumlicher Filter"
-
-msgid "Dataset extent"
-msgstr "Räumliche Abdeckung"
-
-msgid "Clear"
-msgstr "Zurücksetzen"
-
-#: ckan/templates/snippets/search_form.html:80
-msgid " <p class=\"extra\">Please try another search.</p> "
-msgstr " <p class=\"extra\">Bitte versuchen Sie es mit einem anderen Suchbegriff.</p> "
-
-#: ckanext/showcase/templates/package/dataset_showcase_list.html:17
-msgid "Showcases featuring {dataset_name}"
-msgstr "Datennutzungen für {dataset_name}"
-
-#: ckan/templates/package/snippets/resource_view.html:24
 msgid "This resource view is not available at the moment."
-msgstr ""
-"Diese Ressourcendarstellung/-vorschau kann momentan nicht angezeigt werden."
+msgstr "Diese Ressourcendarstellung/-vorschau kann momentan nicht angezeigt werden."
 
-#: ckan/templates/package/snippets/resource_view.html:63
+msgid "Click here for more information."
+msgstr "Klicken Sie hier für weitere Informationen."
+
+msgid "Download resource"
+msgstr "Download der Ressource"
+
+msgid "Your browser does not support iframes."
+msgstr "Ihr Browser unterstützt keine iFrames."
+
 msgid "Embed resource view"
 msgstr "Ressourcendarstellung/-vorschau einbetten"
 
-#: ckan/templates/package/snippets/resource_view.html:66
 msgid ""
 "You can copy and paste the embed code into a CMS or blog software that "
 "supports raw HTML"
@@ -1011,120 +815,68 @@ msgstr ""
 "Sie können den unten stehenden Code der Ressourcendarstellung/-vorschau in ein CMS, ein Blog oder eine andere Web-Anwendung, die "
 "„Raw HTML“ unterstützt, einbetten."
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:19
-msgid "CKAN Data API"
-msgstr "Daten-API"
+msgid "Width"
+msgstr "Breite"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:23
-msgid "Access resource data via a web API with powerful query support"
-msgstr ""
-"Mit Hilfe der Daten-API können Sie auf Ressourcen direkt zugreifen und haben umfangreiche Suchmöglichkeiten"
+msgid "Height"
+msgstr "Höhe"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:24
-msgid ""
-" Further information in the <a       "
-"href=\"http://docs.ckan.org/en/latest/maintaining/datastore.html\" "
-"target=\"_blank\">main CKAN Data API and DataStore documentation</a>.</p> "
-msgstr ""
-"Weiterführende Information finden Sie in der <a "
-"href=\"http://docs.ckan.org/en/latest/maintaining/datastore.html\" "
-"target=\"_blank\">"
-"Dokumentation</a> von CKAN.</p>"
+msgid "Code"
+msgstr "Code"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:33
-msgid "Endpoints"
-msgstr "API-Endpunkte"
+msgid "Tags"
+msgstr "Schlagworte"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:37
-msgid ""
-"The Data API can be accessed via the following actions of the CKAN action "
-"API."
-msgstr ""
-"Die Daten-API kann über folgende Schnittstellenbefehle "
-"der CKAN-Action-API erreicht werden:"
+msgid "Remove Filter"
+msgstr "Filter entfernen"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:42
-msgid "Create"
-msgstr "Erstellen"
+msgid "Filters"
+msgstr "Filter"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:46
-msgid "Update / Insert"
-msgstr "Aktualisieren / Einfügen"
+msgid "Show More {facet_type}"
+msgstr "Alle {facet_type} anzeigen"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:50
-msgid "Query"
-msgstr "Suchen"
+msgid "Show Only Popular {facet_type}"
+msgstr "Nur wichtigste {facet_type} anzeigen"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:54
-msgid "Query (via SQL)"
-msgstr "Suchen (mit SQL)"
+msgid "There are no {facet_type} that match this search"
+msgstr "Für diesen Suchbegriff wurden keine {facet_type} gefunden."
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:66
-msgid "Querying"
-msgstr "Beispiele allgemein"
+msgid "No License Provided"
+msgstr "Keine Lizenz angegeben"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:70
-msgid "Query example (first 5 results)"
-msgstr "Abfragebeispiel 1 (erste 5 Ergebnisse)"
+msgid "Dataset extent"
+msgstr "Räumliche Abdeckung"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:75
-msgid "Query example (results containing 'jones')"
-msgstr "Abfragebeispiel 2 (Ergebnisse, die 'jones' enthalten)"
+msgid "Filter by location"
+msgstr "Räumlicher Filter"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:80
-msgid "Query example (via SQL statement)"
-msgstr "Abfragebeispiel 3 (mit SQL-Befehl)"
+msgid "Clear"
+msgstr "Zurücksetzen"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:91
-msgid "Example: Javascript"
-msgstr "Beispiel: JavaScript"
+###
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:95
-msgid "A simple ajax (JSONP) request to the data API using jQuery."
-msgstr "Eine einfache AJAX-(JSONP-)Abfrage der Daten-API mittels jQuery:"
+msgid "Popular tags"
+msgstr "Beliebte Schlagworte"
 
-#: ckanext/datastore/templates/ajax_snippets/api_info.html:116
-msgid "Example: Python"
-msgstr "Beispiel: Python"
+msgid "Social"
+msgstr "Soziale Medien"
 
-#: ckan/templates/organization/snippets/helper.html:8
-msgid ""
-" CKAN Organizations are used to create, manage and publish collections of "
-"datasets. Users can have different roles within an Organization, depending "
-"on their level of authorisation to create, edit and publish. "
-msgstr ""
-"Mit Hilfe von Organisationen werden Datensätze gruppiert und katalogisiert, die zu derselben bereitstellenden Instanz gehören."
+msgid "Search Datasets"
+msgstr "Datensätze suchen…"
 
-#: ckan/templates/group/snippets/helper.html:4
-msgid "What are Groups?"
-msgstr "Was sind Kategorien?"
+msgid "Search datasets"
+msgstr "Datensätze suchen"
 
-#: ckan/templates/group/snippets/helper.html:8
-msgid ""
-" You can use CKAN Groups to create and manage collections of datasets. This "
-"could be to catalogue datasets for a particular project or team, or on a "
-"particular theme, or as a very simple way to help people find and search "
-"your own published datasets. "
-msgstr ""
-"Mit Hilfe von Kategorien werden Datensätze gruppiert und katalogisiert, die zu derselben Thematik gehören."
+msgid "E.g. environment"
+msgstr "zum Beispiel: Container"
 
-#: ckan/templates/user/new.html:28
-msgid "Create datasets, groups and other exciting things"
-msgstr "Nur als registrierter Benutzer können Sie Änderungen verfolgen oder Datenanfragen stellen."
-
-#: ckan/templates/group/index.html:20
-msgid "Search organizations..."
-msgstr "Organisation suchen…"
-
-#: ckan/templates/snippets/search_result_text.html:28
-msgid "No organizations found for \"{query}\""
-msgstr "Keine Organisation gefunden für den Suchbegriff \"{query}\""
-
-#: ckan/templates/group/index.html:20
 msgid "Search groups..."
 msgstr "Kategorie suchen…"
 
-#: ckan/templates/snippets/search_result_text.html:21
+msgid "No groups found for \"{query}\""
+msgstr "Keine Kategorie gefunden für den Suchbegriff \"{query}\""
+
 msgid "{number} group found for \"{query}\""
 msgid_plural "{number} groups found for \"{query}\""
 msgstr[0] "{number} Kategorie gefunden für \"{query}\""
@@ -1132,93 +884,41 @@ msgstr[1] "{number} Kategorien gefunden für \"{query}\""
 
 #: ckan/templates/snippets/search_result_text.html:22
 msgid "No groups found for \"{query}\""
-msgstr "Keine Kategorie gefunden für den Suchbegriff \"{query}\""
+msgstr "Keine Gruppen gefunden bei der Suche nach \"{query}\""
 
-#: ckan/templates/user/new.html:14
-msgid "Register for an Account"
-msgstr "Registrierung"
+#: ckan/templates/snippets/search_result_text.html:23
+msgid "{number} group found"
+msgid_plural "{number} groups found"
+msgstr[0] "{number} Kategorie gefunden"
+msgstr[1] "{number} Kategorien gefunden"
 
-#: ckan/templates/user/new_user_form.html:17
-msgid "Create Account"
-msgstr "Benutzerkonto erstellen"
+#: ckan/templates/snippets/search_result_text.html:24
+msgid "No groups found"
+msgstr "Keine Gruppen gefunden"
 
-#: ckan/templates/snippets/subscribe.html:4
-#: ckan/templates/user/edit_user_form.html:12
-#: ckan/templates/user/new_user_form.html:7
-#: ckan/templates/user/read_base.html:82
-msgid "Email"
-msgstr "E-Mail-Adresse"
+msgid "What are Groups?"
+msgstr "Was sind Kategorien?"
 
-#: ckan/templates/header.html:56 ckan/templates/user/logout_first.html:15
-msgid "Log in"
-msgstr "Anmelden"
-
-#: ckan/templates/user/login.html:25
-msgid "Need an Account?"
-msgstr "Sie haben noch kein Benutzerkonto?"
-
-msgid "Then sign right up, it only takes a minute."
-msgstr "Dann können Sie gleich eines erstellen:"
-
-#: ckan/templates/user/login.html:30
-msgid "Create an Account"
-msgstr "Registrierung"
-
-#: ckan/templates/user/login.html:42
-msgid "Forgotten your password?"
-msgstr "Sie haben Ihr Passwort vergessen?"
-
-#: ckan/templates/user/login.html:44
-msgid "No problem, use our password recovery form to reset it."
-msgstr ""
-"Kein Problem, Sie können Ihr Passwort zurücksetzen:"
-
-#: ckan/templates/user/login.html:47
-msgid "Forgot your password?"
-msgstr "Passwort zurücksetzen"
-
-#: ckan/templates/user/request_reset.html:6
-msgid "Password reset"
-msgstr "Passwort zurücksetzen"
-
-msgid "Enter your username into the box and we will send you an email with a link to enter a new password."
-msgstr "Sie erhalten eine E-Mail mit einem Link zur Eingabe eines neuen Passworts."
-
-#: ckan/controllers/user.py:499
-msgid "Please check your inbox for a reset code."
-msgstr "Sie sollten nun eine E-Mail erhalten haben mit dem Link zur Eingabe eines neuen Passworts."
-
-msgid "Simply enter a new password and we'll update your account"
-msgstr "Geben Sie einfach ein neues Passwort ein. Ihr Benutzerkonto wird dann automatisch aktualisiert."
-
-msgid "New password"
-msgstr "Neues Passwort"
-
-msgid "Open data portal of the municipality of Rostock"
-msgstr "Open-Data-Portal der Hanse- und Universitätsstadt Rostock"
-
-msgid "There are no showcases that feature this dataset"
-msgstr "Es sind noch keine Datennutzungen für diesen Datensatz bekannt bzw. hinterlegt."
-
-#: ckanext/showcase/templates/showcase/snippets/helper.html:4
-msgid "What are Showcases?"
-msgstr "Was sind Datennutzungen?"
-
-#: ckanext/showcase/templates/showcase/snippets/helper.html:8
 msgid ""
-"Datasets have been used to build apps, websites and visualizations. They've "
-"been featured in articles, and written about in news reports and blog posts. "
-"Showcases collect together the best examples of datasets in use, to provide "
-"further insight, ideas, and inspiration."
-msgstr "Unter Datennutzungen werden Websites, Apps und andere Projekte aufgeführt und verlinkt, die Datensätze nutzen."
+"You can use CKAN Groups to create and manage collections of datasets. This "
+"could be to catalogue datasets for a particular project or team, or on a "
+"particular theme, or as a very simple way to help people find and search "
+"your own published datasets."
+msgstr ""
+"Mit Hilfe von Kategorien werden Datensätze gruppiert und katalogisiert, die zu derselben Thematik gehören."
 
-#: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:9
-msgid "{number} showcase found"
-msgid_plural "{number} showcases found"
-msgstr[0] "{number} Datennutzung gefunden"
-msgstr[1] "{number} Datennutzungen gefunden"
+msgid "Search organizations..."
+msgstr "Organisation suchen…"
 
-#: ckanext/showcase/templates/showcase/read.html:78
-#: ckanext/showcase/templates/showcase/snippets/showcase_info.html:27
-msgid "Launch website"
-msgstr "Website aufrufen"
+msgid "No organizations found for \"{query}\""
+msgstr "Keine Organisation gefunden für den Suchbegriff \"{query}\""
+
+msgid ""
+"CKAN Organizations are used to create, manage and publish collections of "
+"datasets. Users can have different roles within an Organization, depending "
+"on their level of authorisation to create, edit and publish."
+msgstr ""
+"Mit Hilfe von Organisationen werden Datensätze gruppiert und katalogisiert, die zu derselben bereitstellenden Instanz gehören."
+
+msgid "<p class=\"extra\">Please try another search.</p>"
+msgstr "<p class=\"extra\">Bitte versuchen Sie es mit einem anderen Suchbegriff.</p>"

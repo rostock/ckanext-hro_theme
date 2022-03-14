@@ -71,7 +71,7 @@
             </tr>
             {% if res.resource_type == 'file' and res.datastore_active is defined %}
               <tr>
-                <th scope="row">{{ _('DataStore') }}</th>
+                <th scope="row">{{ _('DataStore?') }}</th>
               <td>{% if res.datastore_active == true %}{{ _('yes') }}{% else %}{{ _('no') }}{% endif %}</td>
               </tr>
             {% endif %}
@@ -96,21 +96,23 @@
               {% endif %}
               {% for key, value in h.format_resource_items(res.items()) %}
                 {% if key == 'mimetype' or key == 'Media type' %}
+                  {% if 'zip' in value %}
+                    <tr>
+                      <th scope="row">{{ _('Compression format') }}</th>
+                      <td>ZIP</td>
+                    </tr>
+                  {% endif %}
                   <tr>
                     <th scope="row">{{ _('MIME type') }}</th>
                     <td>{{ value }}</td>
                   </tr>
                 {% endif %}
-              {% endfor %}
-              {% for key, value in h.format_resource_items(res.items()) %}
                 {% if key == 'size' or key == 'Size' or key == 'Größe' %}
                   <tr>
                     <th scope="row">{{ _('Size') }}</th>
                     <td>{% snippet 'snippets/nice_size.html', size_string=value %}</td>
                   </tr>
                 {% endif %}
-              {% endfor %}
-              {% for key, value in h.format_resource_items(res.items()) %}
                 {% if key == 'hash' %}
                   <tr>
                     <th scope="row">{{ _('Hash') }}</th>

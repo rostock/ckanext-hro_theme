@@ -718,8 +718,8 @@ msgstr "Aktualisierungszeitpunkt der Daten"
 msgid "License"
 msgstr "Lizenz"
 
-msgid "DataStore"
-msgstr "DataStore aktiv"
+msgid "DataStore?"
+msgstr "DataStore aktiv?"
 
 msgid "yes"
 msgstr "ja"
@@ -732,6 +732,9 @@ msgstr "Sprache"
 
 msgid "Format"
 msgstr "Format"
+
+msgid "Compression format"
+msgstr "Kompressionsformat"
 
 msgid "MIME type"
 msgstr "MIME-Type"

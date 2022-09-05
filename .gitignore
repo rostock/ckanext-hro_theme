@@ -1,3 +1,4 @@
+ckanext/hro_theme/i18n/de/LC_MESSAGES/ckanext-hro_theme.mo
 .ropeproject
 node_modules
 bower_components
@@ -40,3 +41,5 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+*.mo

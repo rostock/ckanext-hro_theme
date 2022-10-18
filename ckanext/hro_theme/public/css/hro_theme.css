@@ -37,6 +37,11 @@
   margin-top: 3px;
 }
 
+.well {
+  white-space: normal;
+  word-break: keep-all;
+}
+
 .with-separator {
   border-bottom: 1px dotted #dddddd;
 }

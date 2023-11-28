@@ -1,15 +1,15 @@
 # Translations template for ckanext-hro_theme.
-# Copyright (C) 2022 ORGANIZATION
+# Copyright (C) 2023 ORGANIZATION
 # This file is distributed under the same license as the ckanext-hro_theme
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-hro_theme 2.0.3\n"
+"Project-Id-Version: ckanext-hro_theme 2.0.7\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-03-14 14:12+0100\n"
+"POT-Creation-Date: 2023-11-28 10:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,8 +228,7 @@ msgid ""
 "resources: [ { id: \"0c2c4996-afad-4ebe-9a3d-a3a7d7047a4d\", name: "
 "\"Apotheken\", url: "
 "\"https://geo.sv.rostock.de/download/opendata/apotheken/apotheken.csv\", "
-"format: \"CSV\", mimetype: \"text/csv\", size: "
-"\"18081\", hash: "
+"format: \"CSV\", mimetype: \"text/csv\", size: \"18081\", hash: "
 "\"sha256:e056f7335e2ee420d9485a86c3924b54fff27a2e7edeb4bdd5f6278e8d41ddd6\","
 " […] }, […] ], […] tags: [ { id: "
 "\"fbf2dd06-001b-4788-bd98-168a6df82bd3\", name: \"Arzneimittel\", […] }, "
@@ -313,7 +312,7 @@ msgid ""
 "href=\"mailto:ulrich.kunze@rostock.de\">ulrich.kunze@rostock.de</a></p> "
 "<h2>Concept and technical support</h2> <p>Municipality of "
 "Rostock<br/>Land Registry Office<br/>Holbeinplatz 14<br/>18069 "
-"Rostock<br/><span>email:</span> <a "
+"Rostock<br/><a "
 "href=\"mailto:geodienste@rostock.de\">geodienste@rostock.de</a></p> "
 "<h2>Licensing terms</h2> <p>This web application offered by the "
 "municipality of Rostock is based on <a href=\"https://ckan.org\" "
@@ -371,6 +370,12 @@ msgstr ""
 
 #: ckanext/hro_theme/templates/home/snippets/privacy_policy_text.html:1
 msgid ""
+"<h2>Data processing body</h2> <p>Municipality of Rostock<br/>Land "
+"Registry Office<br/>Holbeinplatz 14<br/>18069 Rostock<br/><a "
+"href=\"mailto:geodienste@rostock.de\">geodienste@rostock.de</a></p> "
+"<h2>Data protection officer</h2> <p>Municipality of Rostock<br/>Office of"
+" the Mayor<br/>Data Protection Officer<br/>18050 Rostock<br/><a "
+"href=\"mailto:datenschutz@rostock.de\">datenschutz@rostock.de</a></p> "
 "<h2>Using this web application</h2> <p>You can use this web application "
 "offered by the municipality of Rostock completely without having to "
 "provide any personally-identifying information.</p> <h2>Logging</h2> "
@@ -380,10 +385,7 @@ msgid ""
 "web application in order to protect stored and used information against "
 "unintentional or intentional manipulation, loss or deletion and against "
 "access of unaffiliated third parties. The precautions are being improved "
-"continuously according to technological progress.</p> <h2>Contact</h2> "
-"<p>Municipality of Rostock<br/>Office of the Mayor<br/>Data Security "
-"Officer<br/>18050 Rostock<br/><a "
-"href=\"mailto:datenschutz@rostock.de\">datenschutz@rostock.de</a></p>"
+"continuously according to technological progress.</p>"
 msgstr ""
 
 #: ckanext/hro_theme/templates/home/snippets/promoted.html:8

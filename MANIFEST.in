@@ -1,4 +1,3 @@
 include README.md
 include LICENSE
-include requirements.txt
 recursive-include ckanext/hro_theme *.html *.json *.js *.less *.css *.mo

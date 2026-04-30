@@ -655,12 +655,6 @@ msgstr "Keine Lizenz angegeben"
 msgid "Dataset extent"
 msgstr "Räumliche Abdeckung"
 
-msgid "Filter by location"
-msgstr "Räumlicher Filter"
-
-msgid "Clear"
-msgstr "Zurücksetzen"
-
 ###
 
 msgid "Popular tags"

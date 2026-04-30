@@ -723,11 +723,3 @@ msgstr ""
 msgid "Dataset extent"
 msgstr ""
 
-#: ckanext/hro_theme/templates/spatial/snippets/spatial_query.html:4
-msgid "Filter by location"
-msgstr ""
-
-#: ckanext/hro_theme/templates/spatial/snippets/spatial_query.html:5
-msgid "Clear"
-msgstr ""
-

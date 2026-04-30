@@ -16,13 +16,34 @@
   padding-top: 10px;
 }
 
-.homepage .module-search {
-  margin: 0;
-}
-
 .homepage .stats strong {
   display: block;
   font-size: 300%;
+}
+
+.homepage .stats .card-body  {
+  padding: 1.5rem 1.5rem;
+}
+
+.col-md-6 .card.box + .card.box {
+  margin-top: 1.5rem;
+}
+
+.card-body .stats-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.card-body .stats-list li {
+  flex: 1;
+  text-align: center;
+}
+
+.card-body .stats-list a {
+  display: block;
 }
 
 .module {
@@ -124,13 +145,6 @@ a:focus {
 .account-masthead .account .notifications a span.badge {
   color: #000;
   background-color: #ffeb9c;
-}
-
-span.badge {
-  color: #000;
-  background-color: #ffeb9c;
-  border-radius: 4px;
-  margin-left: 3px;
 }
 
 span.ckan-icon-flame {

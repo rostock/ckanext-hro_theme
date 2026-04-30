@@ -7,12 +7,14 @@ import routes.mapper
 import sys
 import tzlocal
 import ckan.lib.formatters as formatters
+import ckan.model as model
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 
 from datetime import timedelta
 from ckan.common import config
 from flask import Blueprint
+from typing import Any
 
 
 hro_theme = Blueprint('hro_theme', __name__)
@@ -169,6 +171,7 @@ class Hro_ThemePlugin(plugins.SingletonPlugin):
 
     plugins.implements(plugins.IBlueprint)
     plugins.implements(plugins.IConfigurer)
+    plugins.implements(plugins.IResourceController, inherit=True)
     plugins.implements(plugins.ITemplateHelpers)
     plugins.implements(plugins.ITranslation)
 
@@ -176,6 +179,20 @@ class Hro_ThemePlugin(plugins.SingletonPlugin):
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
         toolkit.add_resource('public', 'ckanext-hro_theme')
+
+    def before_resource_show(self, resource_dict: dict[str, Any]):
+        # Restore the original resource URL of DataStore resources so that
+        # they do NOT link to the DataStore dumps but to the original resource URL.
+        if resource_dict.get('url_type') == 'datastore':
+            resource_id = resource_dict.get('id')
+            resource = model.Resource.get(resource_id)
+            if resource and resource.url:
+                resource_dict['url'] = resource.url
+
+        if 'datastore_active' not in resource_dict:
+            resource_dict[u'datastore_active'] = False
+
+        return resource_dict
 
     def get_blueprint(self):
         return hro_theme

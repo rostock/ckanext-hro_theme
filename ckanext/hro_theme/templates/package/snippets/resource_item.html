@@ -49,44 +49,43 @@
   {% block resource_item_explore %}
   {% if not url_is_edit %}
   <div class="dropdown btn-group">
-    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-share"></i>
       {{ _('Explore') }}
       <span class="caret"></span>
     </a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
       {% block resource_item_explore_links %}
-      <li>
-        <a href="{{ url }}" class="resource-url-analytics">
-          {% if not is_activity_archive and res.has_views %}
-            <i class="fa fa-bar-chart-o"></i>
-            {{ _('Preview and more information') }}
-          {% else %}
-            <i class="fa fa-info-circle"></i>
-            {{ _('More information') }}
-          {% endif %}
-        </a>
-      </li>
-      {% if res.url and h.is_url(res.url) %}
-      <li>
-        <a href="{{ res.url }}" target="_blank">
-          {% if res.resource_type == 'api' %}
-            <i class="fa fa-external-link"></i>
-            {{ _('API Endpoint') }}
-          {% else %}
-            <i class="fa fa-arrow-circle-o-down"></i>
-            {{ _('Download') }}
-          {% endif %}
-        </a>
-      </li>
-      {% endif %}
+        {% block explore_view %}
+          <li>
+            <a class="dropdown-item" href="{{ url }}">
+              {% if res.has_views %}
+                <i class="fa fa-chart-bar"></i>
+                {{ _('Preview and more information') }}
+              {% else %}
+                <i class="fa fa-info-circle"></i>
+                {{ _('More information') }}
+              {% endif %}
+            </a>
+          </li>
+        {% endblock explore_view %}
+        {% if res.url and h.is_url(res.url) %}
+          <li>
+            <a class="dropdown-item resource-url-analytics" href="{{ res.url }}" target="_blank" rel="noreferrer">
+              {% if res.resource_type == 'api' %}
+                <i class="fa fa-external-link"></i>
+                {{ _('API Endpoint') }}
+              {% else %}
+                <i class="fa fa-download"></i>
+                {{ _('Download') }}
+              {% endif %}
+            </a>
+          </li>
+        {% endif %}
       {% if can_edit %}
-      <li>
-        <a href="{{ h.url_for(pkg.type ~ '_resource.edit', id=pkg.name, resource_id=res.id) }}">
-          <i class="fa fa-pencil-square-o"></i>
-          {{ _('Edit') }}
-        </a>
-      </li>
+        <li>{% link_for _('Edit resource'), named_route=pkg.type ~ '_resource.edit', id=pkg.name, resource_id=res.id, class_='dropdown-item', icon='pencil' %}</li>
+        {% block resource_item_explore_inner scoped %}{% endblock %}
+        <li>{% link_for _('Views'), named_route=pkg.type ~ '_resource.views', id=pkg.name, resource_id=res.id, class_='dropdown-item', icon='chart-bar' %}</li>
       {% endif %}
       {% endblock %}
     </ul>

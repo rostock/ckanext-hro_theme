@@ -3,7 +3,7 @@
 {% block resources_inner %}
   {% for resource in h.dict_list_reduce(package.resources, 'format') %}
   <li>
-    <a href="{{ h.url_for(package.type ~ '.read', id=package.name) }}" class="label label-default" data-format="{{ resource.lower() }}">{% if resource == 'SHP' %}Shapefile{% else %}{{ resource }}{% endif %}</a>
+    <a href="{{ h.url_for(package.type ~ '.read', id=package.name) }}" class="badge" data-format="{{ resource.lower() }}">{% if resource == 'SHP' %}Shapefile{% else %}{{ resource }}{% endif %}</a>
   </li>
   {% endfor %}
 {% endblock %}

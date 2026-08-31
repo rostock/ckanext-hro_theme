@@ -7,6 +7,7 @@ import routes.mapper
 import sys
 import tzlocal
 import ckan.lib.formatters as formatters
+import ckan.logic as logic
 import ckan.model as model
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
@@ -148,6 +149,15 @@ def render_size(size_string, raw=False):
         else:
             return str(round(size_)) + ' Bytes'
 
+# custom function
+def get_group_count() -> dict[str, int]:
+    stats = len(logic.get_action('group_list')({}, {}))
+    return stats
+
+# custom function
+def get_organization_count() -> dict[str, int]:
+    stats = len(logic.get_action('organization_list')({}, {}))
+    return stats
 
 def api_info():
     return toolkit.render('home/api_info.html')
@@ -200,7 +210,9 @@ class Hro_ThemePlugin(plugins.SingletonPlugin):
     def get_helpers(self):
         return {
             'hro_theme_render_datetime': render_datetime,
-            'hro_theme_render_size': render_size
+            'hro_theme_render_size': render_size,
+            'hro_theme_get_group_count': get_group_count,
+            'hro_theme_get_organization_count': get_organization_count
         }
     
     def i18n_directory(self):

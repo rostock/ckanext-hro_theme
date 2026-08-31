@@ -7,7 +7,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
   name="ckanext-hro_theme",
-  version="3.0.1",
+  version="3.1.0",
   description="Custom CKAN theme for OpenData.HRO (Rostock)",
   long_description=long_description,
   long_description_content_type="text/markdown",

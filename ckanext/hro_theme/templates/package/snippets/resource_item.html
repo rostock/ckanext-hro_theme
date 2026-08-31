@@ -33,7 +33,7 @@
         {% endfor %}
         {% for key, value in h.format_resource_items(res.items()) %}
           {% if key == 'mimetype' or key == 'Media type' %}
-            {% set value_truncated = value|truncate(67, false '…') %}
+            {% set value_truncated = value|truncate(67, false, '…') %}
             • {{ value_truncated }}
           {% endif %}
         {% endfor %}

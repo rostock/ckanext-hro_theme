@@ -33,15 +33,15 @@ def get_display_timezone():
 # function taken from CKAN and slightly adjusted to support UTC offset in the ISO-like formatted datestring
 def date_str_to_datetime(date_str):
     utc_offset = None
-    m = re.search('([\+-]\d{2}:\d{2}$)', date_str)
+    m = re.search(r'([+-]\d{2}:\d{2}$)', date_str)
     if m:
         utc_offset = m.group(1)
-        date_str = re.sub('[\+-]\d{2}:\d{2}$', '', date_str)
+        date_str = re.sub(r'[+-]\d{2}:\d{2}$', '', date_str)
     
-    time_tuple = re.split('[^\d]+', date_str, maxsplit=5)
+    time_tuple = re.split(r'[^\d]+', date_str, maxsplit=5)
 
     if len(time_tuple) >= 6:
-        m = re.match('(?P<seconds>\d{2})(\.(?P<microseconds>\d{6}))?$',
+        m = re.match(r'(?P<seconds>\d{2})(\.(?P<microseconds>\d{6}))?$',
                      time_tuple[5])
         if not m:
             raise ValueError('Unable to parse %s as seconds.microseconds' %
@@ -92,10 +92,10 @@ def render_datetime(datetime_, date_format=None, with_hours=False):
         if datetime_.year < 1900:
             year = str(datetime_.year)
 
-            date_format = re.sub('(?<!%)((%%)*)%y',
+            date_format = re.sub(r'(?<!%)((%%)*)%y',
                                  r'\g<1>{year}'.format(year=year[-2:]),
                                  date_format)
-            date_format = re.sub('(?<!%)((%%)*)%Y',
+            date_format = re.sub(r'(?<!%)((%%)*)%Y',
                                  r'\g<1>{year}'.format(year=year),
                                  date_format)
 
@@ -113,7 +113,7 @@ def render_datetime(datetime_, date_format=None, with_hours=False):
 # custom function
 def _int_string_to_int(int_string):
     try:
-        ints = re.findall('\d', int_string)
+        ints = re.findall(r'\d', int_string)
         if ints is not None:
             int_ = ''
             for item in ints:
